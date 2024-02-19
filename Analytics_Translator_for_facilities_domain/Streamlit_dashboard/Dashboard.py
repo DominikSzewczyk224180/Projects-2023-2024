@@ -81,11 +81,11 @@ st.header("Conclusion")
 st.write("This study explores AI's role in academic facility management at BUas, with a focus on student and staff opinions. It highlights optimism about AI's potential but also concerns around ethics and over-dependence on technology. The key is a balanced approach that values human judgment, provides necessary skills, and maintains open dialogue. Educational strategies should adapt to enhance the academic journey as technology evolves.")
 
 
-participants_distribution = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Simona/participants.png")
-demo_INT_INCR = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Simona/acc_3.png")
-demo_USED_AI = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Simona/used_ai.png")
-demo_KNOWLEDGE = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Simona/used_ai.png")
-demo_EXPERIENCE = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Dominik/Distribution of Experience Levels.png")
+participants_distribution = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Simona/participants.png")
+demo_INT_INCR = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Simona/acc_3.png")
+demo_USED_AI = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Simona/used_ai.png")
+demo_KNOWLEDGE = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Simona/used_ai.png")
+demo_EXPERIENCE = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Dominik/Distribution of Experience Levels.png")
 
 
 show_images = st.button("Show Distribution Images")
@@ -123,46 +123,46 @@ if show_images:
 #IMAGES
 
 # Simona
-participants_distribution = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Simona/participants.png")
-demo_INT_INCR = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Simona/acc_3.png")
-demo_USED_AI = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Simona/used_ai.png")
-demo_KNOWLEDGE = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Simona/used_ai.png")
-demo_EXPERIENCE = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Dominik/Distribution of Experience Levels.png")
-mlr_domains = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Simona/mlr_int_famil_expr_all_domain.png")
-mlr_facility = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Simona/mlr_facility.png")
-lr_facility = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Simona/lr_facility_know_intend.png")
+participants_distribution = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Simona/participants.png")
+demo_INT_INCR = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Simona/acc_3.png")
+demo_USED_AI = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Simona/used_ai.png")
+demo_KNOWLEDGE = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Simona/used_ai.png")
+demo_EXPERIENCE = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Dominik/Distribution of Experience Levels.png")
+mlr_domains = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Simona/mlr_int_famil_expr_all_domain.png")
+mlr_facility = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Simona/mlr_facility.png")
+lr_facility = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Simona/lr_facility_know_intend.png")
 
 
 
 # Martin
 
-Ethical_considerations_chitest = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Martin/Distribution of responses for ethical implications.png")
-AI_future_use = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Martin/Distribution of responses for adoption of AI in future uses.png")
-AI_difficulty_implementation = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Martin/Distribution of responses for difficulty of implementation.png")
-AI_industry_standard = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Martin/Distribution of responses for belief in AI becoming future industry standard.png")
-box_plot = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Martin/Linear Regression Boxplot.png")
+Ethical_considerations_chitest = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Martin/Distribution of responses for ethical implications.png")
+AI_future_use = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Martin/Distribution of responses for adoption of AI in future uses.png")
+AI_difficulty_implementation = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Martin/Distribution of responses for difficulty of implementation.png")
+AI_industry_standard = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Martin/Distribution of responses for belief in AI becoming future industry standard.png")
+box_plot = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Martin/Linear Regression Boxplot.png")
 
 # Imani
 
 # Dominik
 
-AI_Anxiety = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Dominik/AI Anxiety.png")
-AI_vs_H_1 = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Dominik/AI vs Humans Assist in Creative Tasks.png")
-AI_vs_H_2 = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Dominik/AI vs Humans Automating Repetitive Tasks.png")
-AI_Advantages = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Dominik/AI's Advantages.png")
-AI_Impact_ee = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Dominik/AI's Impact on Facility Energy Efficiency.png")
-AI_distribution = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Dominik/Distribution of Experience Levels.png")
-AI_Key_Roles = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Dominik/Facility Management and AI Key Roles and Expectations.png")
-AI_Impact = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Dominik/Impact of AI on FM.png")
-AI_Importance = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Dominik/Importance of AI in FM by Experience Level.png")
-Linear_regresion = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Dominik/Linear Regresion Importace vs Impact.png")
+AI_Anxiety = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Dominik/AI Anxiety.png")
+AI_vs_H_1 = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Dominik/AI vs Humans Assist in Creative Tasks.png")
+AI_vs_H_2 = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Dominik/AI vs Humans Automating Repetitive Tasks.png")
+AI_Advantages = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Dominik/AI's Advantages.png")
+AI_Impact_ee = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Dominik/AI's Impact on Facility Energy Efficiency.png")
+AI_distribution = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Dominik/Distribution of Experience Levels.png")
+AI_Key_Roles = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Dominik/Facility Management and AI Key Roles and Expectations.png")
+AI_Impact = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Dominik/Impact of AI on FM.png")
+AI_Importance = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Dominik/Importance of AI in FM by Experience Level.png")
+Linear_regresion = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Dominik/Linear Regresion Importace vs Impact.png")
 
 # Matey
 
-f_predictive_maintenance_answers = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Matey/PM_answers.png")
-f_predictive_maintenance_methods = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Matey/pm_text_methods_bar_chart.png")
-test_graph = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Matey/One-sample_T-Test.png")
-linear_graph = Image.open("Analytics Translator for facilities domain/Streamlit dashboard/Images/Matey/Linear_graph.png")
+f_predictive_maintenance_answers = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Matey/PM_answers.png")
+f_predictive_maintenance_methods = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Matey/pm_text_methods_bar_chart.png")
+test_graph = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Matey/One-sample_T-Test.png")
+linear_graph = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard/Images/Matey/Linear_graph.png")
 
 section = st.sidebar.selectbox('Select Section', ['---', 'Education', 'Space Optimization', 'Predictive Maintenance', 'AI Impact','Security and Privacy'])
 
@@ -250,16 +250,16 @@ elif section == "AI Impact":
 #     st.header(" ")
 # # Dominik
 
-# AI_Anxiety = Image.open(r"C:\Users\domin\Desktop\2023-24a-fai2-adsai-group-team-facility\Digital Presentation\presenatation\Images\Dominik\AI Anxiety.png")
-# AI_vs_H_1 =  Image.open(r"C:\Users\domin\Desktop\2023-24a-fai2-adsai-group-team-facility\Digital Presentation\presenatation\Images\Dominik\AI vs Humans Assist in Creative Tasks.png")
-# AI_vs_H_2 = Image.open(r"C:\Users\domin\Desktop\2023-24a-fai2-adsai-group-team-facility\Digital Presentation\presenatation\Images\Dominik\AI vs Humans Automating Repetitive Tasks.png")
-# AI_Advantages = Image.open(r"C:\Users\domin\Desktop\2023-24a-fai2-adsai-group-team-facility\Digital Presentation\presenatation\Images\Dominik\AI's Advantages.png")
-# AI_Impact_ee = Image.open(r"C:\Users\domin\Desktop\2023-24a-fai2-adsai-group-team-facility\Digital Presentation\presenatation\Images\Dominik\AI's Impact on Facility Energy Efficiency.png")
-# AI_distribution = Image.open(r"C:\Users\domin\Desktop\2023-24a-fai2-adsai-group-team-facility\Digital Presentation\presenatation\Images\Dominik\Distribution of Experience Levels.png")
-# AI_Key_Roles = Image.open(r"C:\Users\domin\Desktop\2023-24a-fai2-adsai-group-team-facility\Digital Presentation\presenatation\Images\Dominik\Facility Management and AI Key Roles and Expectations.png")
-# AI_Impact = Image.open(r"C:\Users\domin\Desktop\2023-24a-fai2-adsai-group-team-facility\Digital Presentation\presenatation\Images\Dominik\Impact of AI on FM.png")
-# AI_Importance = Image.open(r"C:\Users\domin\Desktop\2023-24a-fai2-adsai-group-team-facility\Digital Presentation\presenatation\Images\Dominik\Importance of AI in FM by Experience Level.png")
-# Linear_regresion = Image.open(r"C:\Users\domin\Desktop\2023-24a-fai2-adsai-group-team-facility\Digital Presentation\presenatation\Images\Dominik\Linear Regresion Importace vs Impact.png")
+# AI_Anxiety = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard\Images\Dominik\AI Anxiety.png")
+# AI_vs_H_1 =  Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard\Images\Dominik\AI vs Humans Assist in Creative Tasks.png")
+# AI_vs_H_2 = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard\Images\Dominik\AI vs Humans Automating Repetitive Tasks.png")
+# AI_Advantages = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard\Images\Dominik\AI's Advantages.png")
+# AI_Impact_ee = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard\Images\Dominik\AI's Impact on Facility Energy Efficiency.png")
+# AI_distribution = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard\Images\Dominik\Distribution of Experience Levels.png")
+# AI_Key_Roles = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard\Images\Dominik\Facility Management and AI Key Roles and Expectations.png")
+# AI_Impact = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard\Images\Dominik\Impact of AI on FM.png")
+# AI_Importance = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard\Images\Dominik\Importance of AI in FM by Experience Level.png")
+# Linear_regresion = Image.open("Analytics_Translator_for_facilities_domain/Streamlit_dashboard\Images\Dominik\Linear Regresion Importace vs Impact.png")
 
 # if impact == 'Results':
 #     # Display the images for "Results" section
@@ -283,9 +283,9 @@ elif section == "AI Impact":
 
 # # Matey
 
-# f_predictive_maintenance_answers = Image.open(r'C:\Users\domin\Desktop\2023-24a-fai2-adsai-group-team-facility\Digital Presentation\presenatation\Images\Matey\PM_answers.png')
-# f_predictive_maintenance_methods = Image.open(r'C:\Users\domin\Desktop\2023-24a-fai2-adsai-group-team-facility\Digital Presentation\presenatation\Images\Matey\pm_text_methods_bar_chart.png')
-# test_graph = Image.open(r'C:\Users\domin\Desktop\2023-24a-fai2-adsai-group-team-facility\Digital Presentation\presenatation\Images\Matey\One-sample_T-Test.png')
+# f_predictive_maintenance_answers = Image.open('Analytics_Translator_for_facilities_domain/Streamlit_dashboard\Images\Matey\PM_answers.png')
+# f_predictive_maintenance_methods = Image.open('Analytics_Translator_for_facilities_domain/Streamlit_dashboard\Images\Matey\pm_text_methods_bar_chart.png')
+# test_graph = Image.open('Analytics_Translator_for_facilities_domain/Streamlit_dashboard\Images\Matey\One-sample_T-Test.png')
 # linear_graph = Image.open(r'C:\Users\domin\Desktop\2023-24a-fai2-adsai-group-team-facility\Digital Presentation\presenatation\Images\Matey\Linear_graph.png')
 
 # if maintenance == "Results":
