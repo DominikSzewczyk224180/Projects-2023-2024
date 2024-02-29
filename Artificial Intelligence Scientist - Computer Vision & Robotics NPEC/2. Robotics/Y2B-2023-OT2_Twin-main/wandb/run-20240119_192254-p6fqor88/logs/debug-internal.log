@@ -1,0 +1,322 @@
+2024-01-19 19:22:54,797 INFO    StreamThr :10168 [internal.py:wandb_internal():86] W&B internal server running at pid: 10168, started at: 2024-01-19 19:22:54.796505
+2024-01-19 19:22:54,797 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: status
+2024-01-19 19:22:54,797 INFO    WriterThread:10168 [datastore.py:open_for_write():87] open: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\run-p6fqor88.wandb
+2024-01-19 19:22:54,797 DEBUG   SenderThread:10168 [sender.py:send():382] send: header
+2024-01-19 19:22:54,848 DEBUG   SenderThread:10168 [sender.py:send():382] send: run
+2024-01-19 19:22:55,303 INFO    SenderThread:10168 [dir_watcher.py:__init__():211] watching files in: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files
+2024-01-19 19:22:55,303 INFO    SenderThread:10168 [sender.py:_start_run_threads():1136] run started: p6fqor88 with start time 1705688574.797012
+2024-01-19 19:22:55,311 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: check_version
+2024-01-19 19:22:55,311 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: check_version
+2024-01-19 19:22:55,443 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: run_start
+2024-01-19 19:22:55,471 DEBUG   HandlerThread:10168 [system_info.py:__init__():27] System info init
+2024-01-19 19:22:55,471 DEBUG   HandlerThread:10168 [system_info.py:__init__():42] System info init done
+2024-01-19 19:22:55,472 INFO    HandlerThread:10168 [system_monitor.py:start():194] Starting system monitor
+2024-01-19 19:22:55,472 INFO    SystemMonitor:10168 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-19 19:22:55,472 INFO    HandlerThread:10168 [system_monitor.py:probe():214] Collecting system info
+2024-01-19 19:22:55,479 INFO    SystemMonitor:10168 [interfaces.py:start():190] Started cpu monitoring
+2024-01-19 19:22:55,479 INFO    SystemMonitor:10168 [interfaces.py:start():190] Started disk monitoring
+2024-01-19 19:22:55,480 INFO    SystemMonitor:10168 [interfaces.py:start():190] Started gpu monitoring
+2024-01-19 19:22:55,481 INFO    SystemMonitor:10168 [interfaces.py:start():190] Started memory monitoring
+2024-01-19 19:22:55,493 INFO    SystemMonitor:10168 [interfaces.py:start():190] Started network monitoring
+2024-01-19 19:22:55,497 DEBUG   HandlerThread:10168 [system_info.py:probe():151] Probing system
+2024-01-19 19:22:55,497 DEBUG   HandlerThread:10168 [system_info.py:_probe_git():136] Probing git
+2024-01-19 19:22:55,497 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:22:55,590 DEBUG   HandlerThread:10168 [system_info.py:_probe_git():144] Probing git done
+2024-01-19 19:22:55,590 DEBUG   HandlerThread:10168 [system_info.py:probe():199] Probing system done
+2024-01-19 19:22:55,590 DEBUG   HandlerThread:10168 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22621-SP0', 'python': '3.9.16', 'heartbeatAt': '2024-01-19T18:22:55.497748', 'startedAt': '2024-01-19T18:22:54.787000', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'c:\\Users\\domin\\Desktop\\Year 2 Block B\\2023-24b-fai2-adsai-DominikSzewczyk224180\\2. Robotics\\Y2B-2023-OT2_Twin-main\\task_11_test.py', 'codePathLocal': 'task_11_test.py', 'codePath': '2. Robotics\\Y2B-2023-OT2_Twin-main\\task_11_test.py', 'git': {'remote': 'https://github.com/BredaUniversityADSAI/2023-24b-fai2-adsai-DominikSzewczyk224180.git', 'commit': '41f0948114a029657b2d25c8c9375403a5c23e9a'}, 'email': '112881814+DominikSzewczyk224180@users.noreply.github.com', 'root': 'C:/Users/domin/Desktop/Year 2 Block B/2023-24b-fai2-adsai-DominikSzewczyk224180', 'host': 'MSI', 'username': 'domin', 'executable': 'C:\\Users\\domin\\anaconda3\\envs\\tf\\python.exe', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2304.0, 'min': 0.0, 'max': 2304.0}, 'cpu_freq_per_core': [{'current': 2304.0, 'min': 0.0, 'max': 2304.0}], 'disk': {'/': {'total': 934.0361289978027, 'used': 611.3498764038086}}, 'gpu': 'NVIDIA GeForce RTX 3050 Ti Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3050 Ti Laptop GPU', 'memory_total': 4294967296}], 'memory': {'total': 15.708477020263672}}
+2024-01-19 19:22:55,590 INFO    HandlerThread:10168 [system_monitor.py:probe():224] Finished collecting system info
+2024-01-19 19:22:55,590 INFO    HandlerThread:10168 [system_monitor.py:probe():227] Publishing system info
+2024-01-19 19:22:55,590 DEBUG   HandlerThread:10168 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-01-19 19:22:55,598 ERROR   HandlerThread:10168 [system_info.py:_save_conda():219] Error saving conda packages: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "C:\Users\domin\anaconda3\envs\tf\lib\site-packages\wandb\sdk\internal\system\system_info.py", line 215, in _save_conda
+    subprocess.call(
+  File "C:\Users\domin\anaconda3\envs\tf\lib\subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "C:\Users\domin\anaconda3\envs\tf\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\domin\anaconda3\envs\tf\lib\subprocess.py", line 1420, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2024-01-19 19:22:55,600 DEBUG   HandlerThread:10168 [system_info.py:_save_conda():220] Saving conda packages done
+2024-01-19 19:22:55,600 INFO    HandlerThread:10168 [system_monitor.py:probe():229] Finished publishing system info
+2024-01-19 19:22:55,610 DEBUG   SenderThread:10168 [sender.py:send():382] send: files
+2024-01-19 19:22:55,610 INFO    SenderThread:10168 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-01-19 19:22:55,619 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: python_packages
+2024-01-19 19:22:55,619 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: python_packages
+2024-01-19 19:22:55,619 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 19:22:55,619 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: stop_status
+2024-01-19 19:22:55,622 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 19:22:55,867 DEBUG   SenderThread:10168 [sender.py:send():382] send: telemetry
+2024-01-19 19:22:56,050 DEBUG   SenderThread:10168 [sender.py:send():382] send: telemetry
+2024-01-19 19:22:56,229 INFO    wandb-upload_0:10168 [upload_job.py:push():131] Uploaded file C:\Users\domin\AppData\Local\Temp\tmpe52wg2olwandb\r1svrijd-wandb-metadata.json
+2024-01-19 19:22:56,318 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\wandb-metadata.json
+2024-01-19 19:22:56,319 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\conda-environment.yaml
+2024-01-19 19:22:56,319 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:22:56,319 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\requirements.txt
+2024-01-19 19:22:56,460 INFO    HandlerThread:10168 [handler.py:handle_tbrecord():767] handling tbrecord: tbrecord {
+  log_dir: "runs/p6fqor88\\runs/p6fqor88_1"
+  save: true
+}
+control {
+  relay_id: "9d6c601fe13d43db8e7fec9a3db34e7e"
+}
+_info {
+  stream_id: "p6fqor88"
+}
+
+2024-01-19 19:22:56,460 DEBUG   HandlerThread:10168 [config_util.py:dict_from_config_file():101] no default config file found in config-defaults.yaml
+2024-01-19 19:22:56,539 DEBUG   SenderThread:10168 [sender.py:send():382] send: tbrecord
+2024-01-19 19:22:56,539 DEBUG   SenderThread:10168 [sender.py:send():382] send: config
+2024-01-19 19:22:57,524 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:22:58,326 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:22:58,582 DEBUG   SenderThread:10168 [sender.py:send():382] send: files
+2024-01-19 19:22:58,582 INFO    SenderThread:10168 [sender.py:_save_file():1403] saving file events.out.tfevents.1705688576.MSI.19880.0 with policy live
+2024-01-19 19:22:58,972 INFO    wandb-upload_0:10168 [upload_job.py:push():131] Uploaded file C:\Users\domin\AppData\Local\Temp\tmpe52wg2olwandb\vtfs7wjq-events.out.tfevents.1705688576.MSI.19880.0
+2024-01-19 19:22:59,339 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\events.out.tfevents.1705688576.MSI.19880.0
+2024-01-19 19:22:59,545 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:22:59,912 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 19:23:00,340 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:01,564 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:23:02,371 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:03,593 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:23:04,389 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:04,922 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 19:23:05,608 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:23:06,423 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:07,627 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:23:08,457 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:09,649 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:23:09,925 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 19:23:10,486 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:10,621 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 19:23:10,623 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: stop_status
+2024-01-19 19:23:10,637 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 19:23:11,666 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:23:12,505 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:12,749 DEBUG   SenderThread:10168 [sender.py:send():382] send: telemetry
+2024-01-19 19:23:12,750 DEBUG   SenderThread:10168 [sender.py:send():382] send: files
+2024-01-19 19:23:12,750 INFO    SenderThread:10168 [sender.py:_save_file():1403] saving file model.zip with policy live
+2024-01-19 19:23:13,518 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\model.zip
+2024-01-19 19:23:13,674 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:23:14,112 INFO    wandb-upload_0:10168 [upload_job.py:push():131] Uploaded file C:\Users\domin\AppData\Local\Temp\tmpe52wg2olwandb\n47z47po-model.zip
+2024-01-19 19:23:14,524 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:15,039 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 19:23:15,702 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:23:16,539 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:17,707 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:23:18,556 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:19,738 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:23:20,108 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 19:23:20,589 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:21,759 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:23:22,605 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:23,784 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:23:24,609 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:25,193 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 19:23:25,624 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 19:23:25,625 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\config.yaml
+2024-01-19 19:23:25,625 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: stop_status
+2024-01-19 19:23:25,640 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 19:23:25,836 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:23:26,637 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:27,850 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:23:28,654 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:29,391 DEBUG   SenderThread:10168 [sender.py:send():382] send: files
+2024-01-19 19:23:29,391 INFO    SenderThread:10168 [sender.py:_save_file():1403] saving file model.zip with policy live
+2024-01-19 19:23:29,654 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\model.zip
+2024-01-19 19:23:29,864 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:23:30,008 INFO    wandb-upload_0:10168 [upload_job.py:push():131] Uploaded file C:\Users\domin\AppData\Local\Temp\tmpe52wg2olwandb\wpka9ycr-model.zip
+2024-01-19 19:23:30,472 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 19:23:30,657 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:31,669 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\events.out.tfevents.1705688576.MSI.19880.0
+2024-01-19 19:23:31,880 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:23:32,672 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:33,899 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:23:34,689 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:35,537 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 19:23:35,916 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:23:36,703 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:37,935 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:23:38,706 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:39,968 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:23:40,592 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 19:23:40,625 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 19:23:40,626 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: stop_status
+2024-01-19 19:23:40,656 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 19:23:40,722 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:41,983 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:23:42,740 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:43,997 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:23:44,752 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:45,606 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 19:23:46,016 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:23:46,756 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:46,995 DEBUG   SenderThread:10168 [sender.py:send():382] send: files
+2024-01-19 19:23:46,995 INFO    SenderThread:10168 [sender.py:_save_file():1403] saving file model.zip with policy live
+2024-01-19 19:23:47,771 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\model.zip
+2024-01-19 19:23:47,793 INFO    wandb-upload_0:10168 [upload_job.py:push():131] Uploaded file C:\Users\domin\AppData\Local\Temp\tmpe52wg2olwandb\lswwxwuj-model.zip
+2024-01-19 19:23:48,037 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:23:48,773 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:50,064 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:23:50,672 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 19:23:50,803 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:52,083 ERROR   gpu       :10168 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-19 19:23:52,311 DEBUG   SenderThread:10168 [sender.py:send():382] send: exit
+2024-01-19 19:23:52,311 INFO    SenderThread:10168 [sender.py:send_exit():589] handling exit code: 1
+2024-01-19 19:23:52,311 INFO    SenderThread:10168 [sender.py:send_exit():591] handling runtime: 56
+2024-01-19 19:23:52,312 INFO    SenderThread:10168 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-19 19:23:52,312 INFO    SenderThread:10168 [sender.py:send_exit():597] send defer
+2024-01-19 19:23:52,312 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:23:52,313 INFO    HandlerThread:10168 [handler.py:handle_request_defer():172] handle defer: 0
+2024-01-19 19:23:52,313 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:23:52,313 INFO    SenderThread:10168 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-01-19 19:23:52,313 INFO    SenderThread:10168 [sender.py:transition_state():617] send defer: 1
+2024-01-19 19:23:52,313 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:23:52,313 INFO    HandlerThread:10168 [handler.py:handle_request_defer():172] handle defer: 1
+2024-01-19 19:23:52,313 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:23:52,313 INFO    SenderThread:10168 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-01-19 19:23:52,313 INFO    SenderThread:10168 [sender.py:transition_state():617] send defer: 2
+2024-01-19 19:23:52,313 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:23:52,313 INFO    HandlerThread:10168 [handler.py:handle_request_defer():172] handle defer: 2
+2024-01-19 19:23:52,313 INFO    HandlerThread:10168 [system_monitor.py:finish():203] Stopping system monitor
+2024-01-19 19:23:52,314 INFO    HandlerThread:10168 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-19 19:23:52,314 INFO    HandlerThread:10168 [interfaces.py:finish():202] Joined disk monitor
+2024-01-19 19:23:52,314 DEBUG   SystemMonitor:10168 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-19 19:23:52,322 DEBUG   SystemMonitor:10168 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-01-19 19:23:52,322 DEBUG   SystemMonitor:10168 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-01-19 19:23:52,363 INFO    HandlerThread:10168 [interfaces.py:finish():202] Joined gpu monitor
+2024-01-19 19:23:52,363 INFO    HandlerThread:10168 [interfaces.py:finish():202] Joined memory monitor
+2024-01-19 19:23:52,363 INFO    HandlerThread:10168 [interfaces.py:finish():202] Joined network monitor
+2024-01-19 19:23:52,363 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:23:52,363 INFO    SenderThread:10168 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-01-19 19:23:52,363 INFO    SenderThread:10168 [sender.py:transition_state():617] send defer: 3
+2024-01-19 19:23:52,363 DEBUG   SenderThread:10168 [sender.py:send():382] send: stats
+2024-01-19 19:23:52,363 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:23:52,363 INFO    HandlerThread:10168 [handler.py:handle_request_defer():172] handle defer: 3
+2024-01-19 19:23:52,363 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:23:52,363 INFO    SenderThread:10168 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-01-19 19:23:52,363 INFO    SenderThread:10168 [sender.py:transition_state():617] send defer: 4
+2024-01-19 19:23:52,363 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:23:52,363 INFO    HandlerThread:10168 [handler.py:handle_request_defer():172] handle defer: 4
+2024-01-19 19:23:52,807 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:52,808 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\wandb-summary.json
+2024-01-19 19:23:54,837 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:23:59,257 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-19 19:23:59,257 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 19:23:59,258 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: keepalive
+2024-01-19 19:23:59,259 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:23:59,259 INFO    SenderThread:10168 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-01-19 19:23:59,259 INFO    SenderThread:10168 [sender.py:transition_state():617] send defer: 5
+2024-01-19 19:23:59,259 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: poll_exit
+2024-01-19 19:23:59,259 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:23:59,259 INFO    HandlerThread:10168 [handler.py:handle_request_defer():172] handle defer: 5
+2024-01-19 19:23:59,259 DEBUG   SenderThread:10168 [sender.py:send():382] send: history
+2024-01-19 19:23:59,260 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: summary_record
+2024-01-19 19:23:59,260 INFO    SenderThread:10168 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-19 19:23:59,261 DEBUG   SenderThread:10168 [sender.py:send():382] send: summary
+2024-01-19 19:23:59,261 INFO    SenderThread:10168 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-19 19:23:59,261 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:23:59,262 INFO    SenderThread:10168 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-01-19 19:23:59,262 INFO    SenderThread:10168 [sender.py:transition_state():617] send defer: 6
+2024-01-19 19:23:59,262 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:23:59,262 INFO    HandlerThread:10168 [handler.py:handle_request_defer():172] handle defer: 6
+2024-01-19 19:23:59,262 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:23:59,262 INFO    SenderThread:10168 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-01-19 19:23:59,262 INFO    SenderThread:10168 [sender.py:transition_state():617] send defer: 7
+2024-01-19 19:23:59,262 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 19:23:59,262 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:23:59,262 INFO    HandlerThread:10168 [handler.py:handle_request_defer():172] handle defer: 7
+2024-01-19 19:23:59,262 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:23:59,263 INFO    SenderThread:10168 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-01-19 19:23:59,360 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-19 19:23:59,858 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\wandb-summary.json
+2024-01-19 19:24:00,291 INFO    SenderThread:10168 [sender.py:transition_state():617] send defer: 8
+2024-01-19 19:24:00,291 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: poll_exit
+2024-01-19 19:24:00,291 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:24:00,292 INFO    HandlerThread:10168 [handler.py:handle_request_defer():172] handle defer: 8
+2024-01-19 19:24:00,292 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:24:00,292 INFO    SenderThread:10168 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-01-19 19:24:00,292 INFO    SenderThread:10168 [job_builder.py:build():296] Attempting to build job artifact
+2024-01-19 19:24:00,292 INFO    SenderThread:10168 [job_builder.py:_get_source_type():426] is repo sourced job
+2024-01-19 19:24:00,351 INFO    SenderThread:10168 [job_builder.py:build():402] adding wandb-job metadata file
+2024-01-19 19:24:00,356 INFO    SenderThread:10168 [sender.py:transition_state():617] send defer: 9
+2024-01-19 19:24:00,356 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:24:00,356 INFO    HandlerThread:10168 [handler.py:handle_request_defer():172] handle defer: 9
+2024-01-19 19:24:00,356 DEBUG   SenderThread:10168 [sender.py:send():382] send: artifact
+2024-01-19 19:24:00,368 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-19 19:24:00,872 INFO    Thread-16 :10168 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:24:01,547 INFO    wandb-upload_0:10168 [upload_job.py:push():86] Skipped uploading C:\Users\domin\AppData\Local\wandb\wandb\artifacts\staging\tmpjgsus18b
+2024-01-19 19:24:01,843 INFO    wandb-upload_1:10168 [upload_job.py:push():89] Uploaded file C:\Users\domin\AppData\Local\wandb\wandb\artifacts\staging\tmplnop94qb
+2024-01-19 19:24:02,895 INFO    SenderThread:10168 [sender.py:send_artifact():1494] sent artifact job-https___github.com_BredaUniversityADSAI_2023-24b-fai2-adsai..yk224180.git_2._Robotics_Y2B-2023-OT2_Twin-main_task_11_test.py - {'id': 'QXJ0aWZhY3Q6Njk2OTQ5OTU3', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEzMTI3MTYxNg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njk2OTQyMjM0', 'versionIndex': 2}}}
+2024-01-19 19:24:02,895 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:24:02,895 INFO    SenderThread:10168 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-01-19 19:24:02,895 INFO    SenderThread:10168 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-01-19 19:24:02,899 INFO    SenderThread:10168 [dir_watcher.py:finish():388] scan: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files
+2024-01-19 19:24:02,905 INFO    SenderThread:10168 [dir_watcher.py:finish():402] scan save: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\conda-environment.yaml conda-environment.yaml
+2024-01-19 19:24:02,905 INFO    SenderThread:10168 [dir_watcher.py:finish():402] scan save: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\config.yaml config.yaml
+2024-01-19 19:24:02,905 INFO    SenderThread:10168 [dir_watcher.py:finish():402] scan save: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\events.out.tfevents.1705688576.MSI.19880.0 events.out.tfevents.1705688576.MSI.19880.0
+2024-01-19 19:24:02,908 INFO    SenderThread:10168 [dir_watcher.py:finish():402] scan save: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\model.zip model.zip
+2024-01-19 19:24:02,908 INFO    SenderThread:10168 [dir_watcher.py:finish():402] scan save: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log output.log
+2024-01-19 19:24:02,908 INFO    SenderThread:10168 [dir_watcher.py:finish():402] scan save: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\requirements.txt requirements.txt
+2024-01-19 19:24:02,910 INFO    SenderThread:10168 [dir_watcher.py:finish():402] scan save: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\wandb-metadata.json wandb-metadata.json
+2024-01-19 19:24:02,910 INFO    SenderThread:10168 [dir_watcher.py:finish():402] scan save: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\wandb-summary.json wandb-summary.json
+2024-01-19 19:24:02,910 INFO    SenderThread:10168 [sender.py:transition_state():617] send defer: 10
+2024-01-19 19:24:02,910 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: poll_exit
+2024-01-19 19:24:02,910 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:24:02,910 INFO    HandlerThread:10168 [handler.py:handle_request_defer():172] handle defer: 10
+2024-01-19 19:24:02,910 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:24:02,910 INFO    SenderThread:10168 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-01-19 19:24:02,910 INFO    SenderThread:10168 [file_pusher.py:finish():175] shutting down file pusher
+2024-01-19 19:24:03,333 INFO    wandb-upload_0:10168 [upload_job.py:push():131] Uploaded file c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\config.yaml
+2024-01-19 19:24:03,379 INFO    wandb-upload_1:10168 [upload_job.py:push():131] Uploaded file C:\Users\domin\AppData\Local\Temp\tmpe52wg2olwandb\cgxf120s-events.out.tfevents.1705688576.MSI.19880.0
+2024-01-19 19:24:03,394 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-19 19:24:03,395 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: poll_exit
+2024-01-19 19:24:03,406 INFO    wandb-upload_2:10168 [upload_job.py:push():131] Uploaded file c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\output.log
+2024-01-19 19:24:03,416 INFO    wandb-upload_4:10168 [upload_job.py:push():131] Uploaded file c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\wandb-summary.json
+2024-01-19 19:24:03,430 INFO    wandb-upload_3:10168 [upload_job.py:push():131] Uploaded file c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\files\requirements.txt
+2024-01-19 19:24:03,646 INFO    Thread-15 :10168 [sender.py:transition_state():617] send defer: 11
+2024-01-19 19:24:03,646 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:24:03,648 INFO    HandlerThread:10168 [handler.py:handle_request_defer():172] handle defer: 11
+2024-01-19 19:24:03,649 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:24:03,649 INFO    SenderThread:10168 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-01-19 19:24:03,649 INFO    SenderThread:10168 [file_pusher.py:join():181] waiting for file pusher
+2024-01-19 19:24:03,649 INFO    SenderThread:10168 [sender.py:transition_state():617] send defer: 12
+2024-01-19 19:24:03,650 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:24:03,650 INFO    HandlerThread:10168 [handler.py:handle_request_defer():172] handle defer: 12
+2024-01-19 19:24:03,650 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:24:03,650 INFO    SenderThread:10168 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-01-19 19:24:03,650 INFO    SenderThread:10168 [file_stream.py:finish():595] file stream finish called
+2024-01-19 19:24:04,155 INFO    SenderThread:10168 [file_stream.py:finish():599] file stream finish is done
+2024-01-19 19:24:04,155 INFO    SenderThread:10168 [sender.py:transition_state():617] send defer: 13
+2024-01-19 19:24:04,155 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:24:04,155 INFO    HandlerThread:10168 [handler.py:handle_request_defer():172] handle defer: 13
+2024-01-19 19:24:04,155 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:24:04,155 INFO    SenderThread:10168 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-01-19 19:24:04,155 INFO    SenderThread:10168 [sender.py:transition_state():617] send defer: 14
+2024-01-19 19:24:04,155 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:24:04,155 INFO    HandlerThread:10168 [handler.py:handle_request_defer():172] handle defer: 14
+2024-01-19 19:24:04,156 DEBUG   SenderThread:10168 [sender.py:send():382] send: final
+2024-01-19 19:24:04,156 DEBUG   SenderThread:10168 [sender.py:send():382] send: footer
+2024-01-19 19:24:04,156 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:24:04,156 INFO    SenderThread:10168 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-01-19 19:24:04,156 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-19 19:24:04,157 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: poll_exit
+2024-01-19 19:24:04,157 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-19 19:24:04,157 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: server_info
+2024-01-19 19:24:04,157 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: get_summary
+2024-01-19 19:24:04,157 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: sampled_history
+2024-01-19 19:24:04,157 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 19:24:04,158 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: job_info
+2024-01-19 19:24:04,158 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: poll_exit
+2024-01-19 19:24:04,158 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: server_info
+2024-01-19 19:24:04,318 DEBUG   SenderThread:10168 [sender.py:send_request():409] send_request: job_info
+2024-01-19 19:24:04,319 INFO    MainThread:10168 [wandb_run.py:_footer_history_summary_info():3857] rendering history
+2024-01-19 19:24:04,319 INFO    MainThread:10168 [wandb_run.py:_footer_history_summary_info():3889] rendering summary
+2024-01-19 19:24:04,321 INFO    MainThread:10168 [wandb_run.py:_footer_sync_info():3816] logging synced files
+2024-01-19 19:24:04,321 DEBUG   HandlerThread:10168 [handler.py:handle_request():146] handle_request: shutdown
+2024-01-19 19:24:04,321 INFO    HandlerThread:10168 [handler.py:finish():869] shutting down handler
+2024-01-19 19:24:05,163 INFO    WriterThread:10168 [datastore.py:close():296] close: c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240119_192254-p6fqor88\run-p6fqor88.wandb
+2024-01-19 19:24:05,320 INFO    SenderThread:10168 [sender.py:finish():1572] shutting down sender
+2024-01-19 19:24:05,320 INFO    SenderThread:10168 [file_pusher.py:finish():175] shutting down file pusher
+2024-01-19 19:24:05,320 INFO    SenderThread:10168 [file_pusher.py:join():181] waiting for file pusher

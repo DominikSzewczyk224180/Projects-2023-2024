@@ -1,0 +1,13 @@
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 1        |
+|    ep_rew_mean     | 0.763    |
+| time/              |          |
+|    fps             | 72       |
+|    iterations      | 1        |
+|    time_elapsed    | 28       |
+|    total_timesteps | 2048     |
+---------------------------------
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.

@@ -1,0 +1,401 @@
+### funions and model:
+
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+import pandas as pd
+import os
+import random
+import shutil
+from shutil import copy
+from collections import defaultdict
+import tensorflow as tf
+import keras.backend as K
+from patchify import patchify, unpatchify
+import glob
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from keras.optimizers import Adam
+
+
+
+def padder(image, patch_size):
+    h = image.shape[0]
+    w = image.shape[1]
+    height_padding = ((h // patch_size) + 1) * patch_size - h
+    width_padding = ((w // patch_size) + 1) * patch_size - w
+
+    top_padding = int(height_padding/2)
+    bottom_padding = height_padding - top_padding
+
+    left_padding = int(width_padding/2)
+    right_padding = width_padding - left_padding
+
+    padded_image = cv2.copyMakeBorder(image, top_padding, bottom_padding, left_padding, right_padding, cv2.BORDER_CONSTANT, value=[0, 0, 0])
+
+    return padded_image
+
+def create_and_save_patches(dataset_type, patch_size, scaling_factor,mask_type):
+
+    for image_path in glob.glob(f'Images for model/{mask_type}/{dataset_type}_images/{dataset_type}/*.png'):
+        mask_suffix = f'_{mask_type}_mask.tif'
+        path = f'Images for model/{mask_type}'
+        mask_path = image_path.replace('images', 'masks').replace('.png', mask_suffix)
+
+        image = cv2.imread(image_path)
+        image = padder(image, patch_size)
+        if scaling_factor != 1:
+            image = cv2.resize(image, (0,0), fx=scaling_factor, fy=scaling_factor)
+        patches = patchify(image, (patch_size, patch_size, 1), step=patch_size)
+        patches = patches.reshape(-1, patch_size, patch_size, 1)
+
+        image_patch_path = image_path.replace(path, patch_dir)
+        for i, patch in enumerate(patches):
+            image_patch_path_numbered = f'{image_patch_path[:-4]}_{i}.png'
+            cv2.imwrite(image_patch_path_numbered, patch)
+
+        mask_path = image_path.replace('images', 'masks').replace('.png', mask_suffix)
+        mask = cv2.imread(mask_path, 0)
+        mask = padder(mask, patch_size)
+        if scaling_factor != 1:
+            mask = cv2.resize(mask, (0,0), fx=scaling_factor, fy=scaling_factor)
+        patches = patchify(mask, (patch_size, patch_size), step=patch_size)
+        patches = patches.reshape(-1, patch_size, patch_size, 1)
+
+        mask_patch_path = mask_path.replace(path, patch_dir)
+        for i, patch in enumerate(patches):
+            mask_patch_path_numbered = f'{mask_patch_path[:-4]}_{i}.png'
+            cv2.imwrite(mask_patch_path_numbered, patch)
+
+
+# Let's implement two custom metrics f1 score and iou
+def f1(y_true, y_pred):
+    def recall_m(y_true, y_pred):
+        TP = K.sum(K.round(K.clip(y_true * y_pred, 0, 1)))
+        Positives = K.sum(K.round(K.clip(y_true, 0, 1)))
+        recall = TP / (Positives+K.epsilon())
+        return recall
+    
+    def precision_m(y_true, y_pred):
+        TP = K.sum(K.round(K.clip(y_true * y_pred, 0, 1)))
+        Pred_Positives = K.sum(K.round(K.clip(y_pred, 0, 1)))
+        precision = TP / (Pred_Positives+K.epsilon())
+        return precision
+    
+    precision, recall = precision_m(y_true, y_pred), recall_m(y_true, y_pred)
+    
+    return 2*((precision*recall)/(precision+recall+K.epsilon()))
+
+def iou(y_true, y_pred):
+    def f(y_true, y_pred):
+        y_pred = tf.cast(y_pred>0.5,y_pred.dtype)
+        intersection = K.sum(K.abs(y_true * y_pred), axis=[1,2,3])
+        total = K.sum(K.square(y_true),[1,2,3]) + K.sum(K.square(y_pred),[1,2,3])
+        union = total - intersection
+        return (intersection + K.epsilon()) / (union + K.epsilon())
+    return K.mean(f(y_true, y_pred), axis=-1)
+
+
+def save_detected_instances_with_crop(original_image, mask, save_path):
+    combined_mask = cv2.cvtColor(mask, cv2.COLOR_BGR2GRAY)
+
+    cv2.line(combined_mask, (1377, 0), (1350, combined_mask.shape[0]), (0, 0, 0), thickness=5)
+    cv2.line(combined_mask, (1895, 0), (2000, combined_mask.shape[0]), (0, 0, 0), thickness=5)
+    cv2.line(combined_mask, (2415, 0), (2500, combined_mask.shape[0]), (0, 0, 0), thickness=5)
+    cv2.line(combined_mask, (2920, 0), (3000, combined_mask.shape[0]), (0, 0, 0), thickness=5)
+
+    _, thresholded = cv2.threshold(combined_mask, 5, 255, cv2.THRESH_BINARY)
+
+    kernel = np.ones((5, 5), np.uint8)
+    morphed = cv2.morphologyEx(thresholded, cv2.MORPH_CLOSE, kernel)
+    morphed = cv2.morphologyEx(morphed, cv2.MORPH_OPEN, kernel)
+
+    contours, _ = cv2.findContours(morphed, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+
+    filtered_contours = [contour for contour in contours if cv2.contourArea(contour) > 5000]
+
+    contours_to_use = sorted(filtered_contours, key=cv2.contourArea, reverse=True)[:len(filtered_contours)]
+
+    instance_id = 0
+    for contour in contours_to_use:
+        x, y, w, h = cv2.boundingRect(contour)
+        
+        # Crop corresponding regions from the original image
+        instance_crop = original_image[y:y+h, x:x+w]
+        
+        instance_img_filename = f"instance_{instance_id}.png"
+        instance_img_save_path = os.path.join(save_path, instance_img_filename)
+        cv2.imwrite(instance_img_save_path, instance_crop)
+        
+        # Save the instance's mask 
+        instance_mask_filename = f"instance_{instance_id}_mask.png"
+        instance_mask_save_path = os.path.join(save_path, instance_mask_filename)
+        cv2.imwrite(instance_mask_save_path, combined_mask[y:y+h, x:x+w])
+        
+        instance_id += 1
+
+
+def get_last_node_coordinates(skeleton_data, node_id):
+    # Filter data based on the provided node_id
+    filtered_data = skeleton_data[skeleton_data['node-id-src'] == node_id]
+    
+    if filtered_data.empty:
+        print("No data found for the specified node ID.")
+        return None
+    
+    # Extract coordinates
+    x_coord = filtered_data['image-coord-src-1'].values[0]
+    y_coord = filtered_data['image-coord-src-0'].values[0]
+
+    return x_coord, y_coord
+
+
+
+
+
+
+
+# U-Net model
+# Author: Sreenivas Bhattiprolu
+# This code is coming from the videos at the beginning
+from keras.models import Model
+import keras.backend as K
+from keras.layers import Input, Conv2D, MaxPooling2D, UpSampling2D, concatenate, Conv2DTranspose, BatchNormalization, Dropout, Lambda
+
+def simple_unet_model(IMG_HEIGHT, IMG_WIDTH, IMG_CHANNELS, lr):
+# Build the model
+    inputs = Input((IMG_HEIGHT, IMG_WIDTH, IMG_CHANNELS))
+    s = inputs
+
+    # Contraction path
+    c1 = Conv2D(16, (3, 3), activation='relu', kernel_initializer='he_normal', padding='same')(s)
+    c1 = Dropout(0.1)(c1)
+    c1 = Conv2D(16, (3, 3), activation='relu', kernel_initializer='he_normal', padding='same')(c1)
+    p1 = MaxPooling2D((2, 2))(c1)
+    
+    c2 = Conv2D(32, (3, 3), activation='relu', kernel_initializer='he_normal', padding='same')(p1)
+    c2 = Dropout(0.1)(c2)
+    c2 = Conv2D(32, (3, 3), activation='relu', kernel_initializer='he_normal', padding='same')(c2)
+    p2 = MaxPooling2D((2, 2))(c2)
+     
+    c3 = Conv2D(64, (3, 3), activation='relu', kernel_initializer='he_normal', padding='same')(p2)
+    c3 = Dropout(0.2)(c3)
+    c3 = Conv2D(64, (3, 3), activation='relu', kernel_initializer='he_normal', padding='same')(c3)
+    p3 = MaxPooling2D((2, 2))(c3)
+     
+    c4 = Conv2D(128, (3, 3), activation='relu', kernel_initializer='he_normal', padding='same')(p3)
+    c4 = Dropout(0.2)(c4)
+    c4 = Conv2D(128, (3, 3), activation='relu', kernel_initializer='he_normal', padding='same')(c4)
+    p4 = MaxPooling2D(pool_size=(2, 2))(c4)
+     
+    c5 = Conv2D(256, (3, 3), activation='relu', kernel_initializer='he_normal', padding='same')(p4)
+    c5 = Dropout(0.3)(c5)
+    c5 = Conv2D(256, (3, 3), activation='relu', kernel_initializer='he_normal', padding='same')(c5)
+    
+    # Expansive path 
+    u6 = Conv2DTranspose(128, (2, 2), strides=(2, 2), padding='same')(c5)
+    u6 = concatenate([u6, c4])
+    c6 = Conv2D(128, (3, 3), activation='relu', kernel_initializer='he_normal', padding='same')(u6)
+    c6 = Dropout(0.2)(c6)
+    c6 = Conv2D(128, (3, 3), activation='relu', kernel_initializer='he_normal', padding='same')(c6)
+     
+    u7 = Conv2DTranspose(64, (2, 2), strides=(2, 2), padding='same')(c6)
+    u7 = concatenate([u7, c3])
+    c7 = Conv2D(64, (3, 3), activation='relu', kernel_initializer='he_normal', padding='same')(u7)
+    c7 = Dropout(0.2)(c7)
+    c7 = Conv2D(64, (3, 3), activation='relu', kernel_initializer='he_normal', padding='same')(c7)
+     
+    u8 = Conv2DTranspose(32, (2, 2), strides=(2, 2), padding='same')(c7)
+    u8 = concatenate([u8, c2])
+    c8 = Conv2D(32, (3, 3), activation='relu', kernel_initializer='he_normal', padding='same')(u8)
+    c8 = Dropout(0.1)(c8)
+    c8 = Conv2D(32, (3, 3), activation='relu', kernel_initializer='he_normal', padding='same')(c8)
+     
+    u9 = Conv2DTranspose(16, (2, 2), strides=(2, 2), padding='same')(c8)
+    u9 = concatenate([u9, c1], axis=3)
+    c9 = Conv2D(16, (3, 3), activation='relu', kernel_initializer='he_normal', padding='same')(u9)
+    c9 = Dropout(0.1)(c9)
+    c9 = Conv2D(16, (3, 3), activation='relu', kernel_initializer='he_normal', padding='same')(c9)
+     
+    outputs = Conv2D(1, (1, 1), activation='sigmoid')(c9)
+     
+    model = Model(inputs=[inputs], outputs=[outputs])
+    optimizer = Adam(lr=lr) 
+    model.compile(optimizer=optimizer,
+                  loss='binary_crossentropy',
+                  metrics=['accuracy', f1, iou])
+    model.summary()
+    
+    return model
+
+
+patch_size = 128
+scaling_factor = 1
+
+mask_type = 'root'
+
+
+patch_dir = '2. Robotics/Y2B-2023-OT2_Twin-main/Images for model/root_patched'
+for subdir in ['train_images/train', 'train_masks/train', 'val_images/val', 'val_masks/val','test_images/test','test_masks/test']:
+    os.makedirs(os.path.join(patch_dir, subdir), exist_ok=True)
+
+print("Current Working Directory:", os.getcwd())
+
+print("Train Images:", len(os.listdir(os.path.join(patch_dir, 'train_images/train'))))
+print("Train Masks:", len(os.listdir(os.path.join(patch_dir, 'train_masks/train'))))
+print("Validation Images:", len(os.listdir(os.path.join(patch_dir, 'val_images/val'))))
+print("Validation Masks:", len(os.listdir(os.path.join(patch_dir, 'val_masks/val'))))
+
+
+
+create_and_save_patches('train', patch_size, scaling_factor, mask_type= mask_type)
+create_and_save_patches('val', patch_size, scaling_factor, mask_type= mask_type)
+
+# Training images
+train_image_datagen = ImageDataGenerator(rescale=1./255)
+
+train_image_generator = train_image_datagen.flow_from_directory(
+    f'{patch_dir}/train_images',
+    target_size=(patch_size, patch_size),
+    batch_size=16,
+    class_mode=None,
+    color_mode='grayscale',
+    seed=42)
+
+# Training masks
+train_mask_datagen = ImageDataGenerator()
+
+train_mask_generator = train_mask_datagen.flow_from_directory(
+    f'{patch_dir}/train_masks',
+    target_size=(patch_size, patch_size),
+    batch_size=16,
+    class_mode=None,
+    color_mode='grayscale',
+    seed=42)
+
+train_generator = zip(train_image_generator, train_mask_generator)
+
+# val images
+val_image_datagen = ImageDataGenerator(rescale=1./255)
+
+val_image_generator = val_image_datagen.flow_from_directory(
+    f'{patch_dir}/val_images',
+    target_size=(patch_size, patch_size),
+    batch_size=16,
+    class_mode=None,
+    color_mode='grayscale',
+    seed=42
+)
+
+# val masks
+val_mask_datagen = ImageDataGenerator()
+
+val_mask_generator = val_mask_datagen.flow_from_directory(
+    f'{patch_dir}/val_masks',
+    target_size=(patch_size, patch_size),
+    batch_size=16,
+    class_mode=None,
+    color_mode='grayscale',
+    seed=42
+)
+
+val_generator = zip(val_image_generator, val_mask_generator)
+
+
+model_root = simple_unet_model(patch_size, patch_size, 1, lr=0.001)
+
+
+from keras.callbacks import EarlyStopping
+
+# cb = EarlyStopping(monitor='val_iou',
+#                    patience=3   ,
+#                    restore_best_weights= True,
+#                    mode='max')
+
+h_root = model_root.fit(
+    train_generator,
+    steps_per_epoch=len(train_image_generator),
+    epochs=17,
+    validation_data = val_generator,
+    validation_steps = val_image_generator.samples//16
+    # callbacks=[cb]
+    )
+
+model_root.save("modelroot.h5")
+
+from sim_class import Simulation
+
+num_agents = 1
+simulation_instance = Simulation(num_agents=num_agents, render=False)
+
+# Call the get_plate_image method on the instance
+image_path = simulation_instance.get_plate_image()
+
+
+patch_size = 128
+
+ # Read the image
+image = cv2.imread(image_path)
+image = padder(image, patch_size)
+
+patches = patchify(image, (patch_size, patch_size, 1), step=patch_size)
+ 
+i = patches.shape[0]
+j = patches.shape[1]
+    
+patches = patches.reshape(-1, patch_size, patch_size, 1)
+patches.shape
+ 
+preds = model_root.predict(patches/255)
+ 
+preds = preds.reshape(i, j, 128, 128)
+   
+predicted_mask = unpatchify(preds, (image.shape[0], image.shape[1]))
+   
+    # Cropping the predicted mask
+crop_top, crop_bottom, crop_left, crop_right = 33, 33, 11, 11
+predicted_mask = predicted_mask[crop_top:-crop_bottom, crop_left:-crop_right]
+
+
+
+
+def show_cropped_square(image,mask):
+   
+    
+    th, output_im = cv2.threshold(image, 100, 255, cv2.THRESH_BINARY_INV)
+    kernel = np.ones((9, 9), dtype="uint8")
+    im_d = cv2.dilate(output_im, kernel, iterations=1)
+    im_closing = cv2.erode(im_d, kernel, iterations=10)
+    edges = cv2.Canny(im_closing, threshold1=100, threshold2=240)
+    
+    contours, hierarchy = cv2.findContours(edges, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    im = cv2.drawContours(image, contours, contourIdx=-1, color=(0, 255, 0), thickness=2)
+    im = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+    
+    largest_contour = max(contours, key=cv2.contourArea)
+    
+    x, y, w, h = cv2.boundingRect(largest_contour)
+
+    max_side = max(w, h)
+    center_x = x + w // 2
+    center_y = y + h // 2
+    x = center_x - max_side // 2
+    y = center_y - max_side // 2
+    
+        
+    cropped_image = image[y:y + max_side, x:x + max_side]
+    cropped_mask = mask[y:y + max_side, x:x + max_side]
+
+    return cropped_image, cropped_mask
+
+cropped_image, cropped_mask = show_cropped_square(image, predicted_mask)
+
+plt.imshow(cropped_image, cmap='gray')
+plt.show()
+
+plt.imshow(cropped_mask, cmap='gray')
+plt.show()
+
+cropped_mask_normalized = (cropped_mask * 255).astype(np.uint8)
+cv2.imwrite("plants.png", cropped_mask_normalized)

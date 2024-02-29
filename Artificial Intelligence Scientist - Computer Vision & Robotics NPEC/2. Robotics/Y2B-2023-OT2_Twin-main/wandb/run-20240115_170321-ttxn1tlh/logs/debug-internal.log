@@ -1,0 +1,170 @@
+2024-01-15 17:03:21,499 INFO    StreamThr :24532 [internal.py:wandb_internal():86] W&B internal server running at pid: 24532, started at: 2024-01-15 17:03:21.498093
+2024-01-15 17:03:21,501 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status
+2024-01-15 17:03:21,517 INFO    WriterThread:24532 [datastore.py:open_for_write():87] open: C:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240115_170321-ttxn1tlh\run-ttxn1tlh.wandb
+2024-01-15 17:03:21,519 DEBUG   SenderThread:24532 [sender.py:send():382] send: header
+2024-01-15 17:03:21,606 DEBUG   SenderThread:24532 [sender.py:send():382] send: run
+2024-01-15 17:03:22,012 INFO    SenderThread:24532 [dir_watcher.py:__init__():211] watching files in: C:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240115_170321-ttxn1tlh\files
+2024-01-15 17:03:22,012 INFO    SenderThread:24532 [sender.py:_start_run_threads():1136] run started: ttxn1tlh with start time 1705334601.499535
+2024-01-15 17:03:22,020 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: check_version
+2024-01-15 17:03:22,021 DEBUG   SenderThread:24532 [sender.py:send_request():409] send_request: check_version
+2024-01-15 17:03:22,090 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: run_start
+2024-01-15 17:03:22,133 DEBUG   HandlerThread:24532 [system_info.py:__init__():27] System info init
+2024-01-15 17:03:22,133 DEBUG   HandlerThread:24532 [system_info.py:__init__():42] System info init done
+2024-01-15 17:03:22,134 INFO    HandlerThread:24532 [system_monitor.py:start():194] Starting system monitor
+2024-01-15 17:03:22,134 INFO    SystemMonitor:24532 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-15 17:03:22,135 INFO    HandlerThread:24532 [system_monitor.py:probe():214] Collecting system info
+2024-01-15 17:03:22,143 INFO    SystemMonitor:24532 [interfaces.py:start():190] Started cpu monitoring
+2024-01-15 17:03:22,143 INFO    SystemMonitor:24532 [interfaces.py:start():190] Started disk monitoring
+2024-01-15 17:03:22,145 INFO    SystemMonitor:24532 [interfaces.py:start():190] Started gpu monitoring
+2024-01-15 17:03:22,146 INFO    SystemMonitor:24532 [interfaces.py:start():190] Started memory monitoring
+2024-01-15 17:03:22,169 INFO    SystemMonitor:24532 [interfaces.py:start():190] Started network monitoring
+2024-01-15 17:03:22,179 DEBUG   HandlerThread:24532 [system_info.py:probe():151] Probing system
+2024-01-15 17:03:22,182 DEBUG   HandlerThread:24532 [system_info.py:_probe_git():136] Probing git
+2024-01-15 17:03:22,188 ERROR   gpu       :24532 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-15 17:03:22,305 DEBUG   HandlerThread:24532 [system_info.py:_probe_git():144] Probing git done
+2024-01-15 17:03:22,305 DEBUG   HandlerThread:24532 [system_info.py:probe():199] Probing system done
+2024-01-15 17:03:22,305 DEBUG   HandlerThread:24532 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22621-SP0', 'python': '3.9.16', 'heartbeatAt': '2024-01-15T16:03:22.179674', 'startedAt': '2024-01-15T16:03:21.476626', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/BredaUniversityADSAI/2023-24b-fai2-adsai-DominikSzewczyk224180.git', 'commit': '7a7443cf755e4e24ab09828c0294df216ba4c505'}, 'email': '112881814+DominikSzewczyk224180@users.noreply.github.com', 'root': 'C:/Users/domin/Desktop/Year 2 Block B/2023-24b-fai2-adsai-DominikSzewczyk224180', 'host': 'MSI', 'username': 'domin', 'executable': 'c:\\Users\\domin\\anaconda3\\envs\\tf\\python.exe', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2304.0, 'min': 0.0, 'max': 2304.0}, 'cpu_freq_per_core': [{'current': 2304.0, 'min': 0.0, 'max': 2304.0}], 'disk': {'/': {'total': 934.0361289978027, 'used': 605.7914047241211}}, 'gpu': 'NVIDIA GeForce RTX 3050 Ti Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3050 Ti Laptop GPU', 'memory_total': 4294967296}], 'memory': {'total': 15.708477020263672}}
+2024-01-15 17:03:22,306 INFO    HandlerThread:24532 [system_monitor.py:probe():224] Finished collecting system info
+2024-01-15 17:03:22,306 INFO    HandlerThread:24532 [system_monitor.py:probe():227] Publishing system info
+2024-01-15 17:03:22,306 DEBUG   HandlerThread:24532 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-01-15 17:03:22,315 ERROR   HandlerThread:24532 [system_info.py:_save_conda():219] Error saving conda packages: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "c:\Users\domin\anaconda3\envs\tf\lib\site-packages\wandb\sdk\internal\system\system_info.py", line 215, in _save_conda
+    subprocess.call(
+  File "c:\Users\domin\anaconda3\envs\tf\lib\subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "c:\Users\domin\anaconda3\envs\tf\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "c:\Users\domin\anaconda3\envs\tf\lib\subprocess.py", line 1420, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2024-01-15 17:03:22,320 DEBUG   HandlerThread:24532 [system_info.py:_save_conda():220] Saving conda packages done
+2024-01-15 17:03:22,321 INFO    HandlerThread:24532 [system_monitor.py:probe():229] Finished publishing system info
+2024-01-15 17:03:22,333 DEBUG   SenderThread:24532 [sender.py:send():382] send: files
+2024-01-15 17:03:22,335 INFO    SenderThread:24532 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-01-15 17:03:22,359 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: python_packages
+2024-01-15 17:03:22,360 DEBUG   SenderThread:24532 [sender.py:send_request():409] send_request: python_packages
+2024-01-15 17:03:22,360 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-15 17:03:22,362 DEBUG   SenderThread:24532 [sender.py:send_request():409] send_request: stop_status
+2024-01-15 17:03:22,365 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-15 17:03:22,373 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: pause
+2024-01-15 17:03:22,373 INFO    HandlerThread:24532 [handler.py:handle_request_pause():708] stopping system metrics thread
+2024-01-15 17:03:22,374 INFO    HandlerThread:24532 [system_monitor.py:finish():203] Stopping system monitor
+2024-01-15 17:03:22,374 INFO    HandlerThread:24532 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-15 17:03:22,374 DEBUG   SystemMonitor:24532 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-15 17:03:22,375 INFO    HandlerThread:24532 [interfaces.py:finish():202] Joined disk monitor
+2024-01-15 17:03:22,390 DEBUG   SystemMonitor:24532 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-01-15 17:03:22,403 DEBUG   SystemMonitor:24532 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-01-15 17:03:22,464 INFO    HandlerThread:24532 [interfaces.py:finish():202] Joined gpu monitor
+2024-01-15 17:03:22,465 INFO    HandlerThread:24532 [interfaces.py:finish():202] Joined memory monitor
+2024-01-15 17:03:22,465 INFO    HandlerThread:24532 [interfaces.py:finish():202] Joined network monitor
+2024-01-15 17:03:22,517 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: resume
+2024-01-15 17:03:22,518 INFO    HandlerThread:24532 [handler.py:handle_request_resume():699] starting system metrics thread
+2024-01-15 17:03:22,518 INFO    HandlerThread:24532 [system_monitor.py:start():194] Starting system monitor
+2024-01-15 17:03:22,520 INFO    SystemMonitor:24532 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-15 17:03:22,530 INFO    SystemMonitor:24532 [interfaces.py:start():190] Started cpu monitoring
+2024-01-15 17:03:22,531 INFO    SystemMonitor:24532 [interfaces.py:start():190] Started disk monitoring
+2024-01-15 17:03:22,533 INFO    SystemMonitor:24532 [interfaces.py:start():190] Started gpu monitoring
+2024-01-15 17:03:22,534 INFO    SystemMonitor:24532 [interfaces.py:start():190] Started memory monitoring
+2024-01-15 17:03:22,571 INFO    SystemMonitor:24532 [interfaces.py:start():190] Started network monitoring
+2024-01-15 17:03:22,578 ERROR   gpu       :24532 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-15 17:03:22,651 DEBUG   SenderThread:24532 [sender.py:send():382] send: telemetry
+2024-01-15 17:03:22,651 DEBUG   SenderThread:24532 [sender.py:send():382] send: stats
+2024-01-15 17:03:22,652 DEBUG   SenderThread:24532 [sender.py:send():382] send: telemetry
+2024-01-15 17:03:22,924 INFO    wandb-upload_0:24532 [upload_job.py:push():131] Uploaded file C:\Users\domin\AppData\Local\Temp\tmp4yuok_ekwandb\8wcb6gnd-wandb-metadata.json
+2024-01-15 17:03:22,948 DEBUG   SenderThread:24532 [sender.py:send():382] send: config
+2024-01-15 17:03:23,018 INFO    Thread-16 :24532 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240115_170321-ttxn1tlh\files\wandb-metadata.json
+2024-01-15 17:03:23,018 INFO    Thread-16 :24532 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240115_170321-ttxn1tlh\files\requirements.txt
+2024-01-15 17:03:23,018 INFO    Thread-16 :24532 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240115_170321-ttxn1tlh\files\conda-environment.yaml
+2024-01-15 17:03:23,018 INFO    Thread-16 :24532 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240115_170321-ttxn1tlh\files\output.log
+2024-01-15 17:03:24,614 ERROR   gpu       :24532 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-15 17:03:25,054 INFO    Thread-16 :24532 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240115_170321-ttxn1tlh\files\output.log
+2024-01-15 17:03:26,650 ERROR   gpu       :24532 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-15 17:03:26,681 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:03:27,057 INFO    Thread-16 :24532 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240115_170321-ttxn1tlh\files\output.log
+2024-01-15 17:03:28,683 ERROR   gpu       :24532 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-15 17:03:29,069 INFO    Thread-16 :24532 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240115_170321-ttxn1tlh\files\output.log
+2024-01-15 17:03:30,735 ERROR   gpu       :24532 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-15 17:03:31,082 INFO    Thread-16 :24532 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240115_170321-ttxn1tlh\files\output.log
+2024-01-15 17:03:31,950 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:03:32,763 ERROR   gpu       :24532 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-15 17:03:33,100 INFO    Thread-16 :24532 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240115_170321-ttxn1tlh\files\output.log
+2024-01-15 17:03:34,793 ERROR   gpu       :24532 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-15 17:03:35,106 INFO    Thread-16 :24532 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240115_170321-ttxn1tlh\files\output.log
+2024-01-15 17:03:36,326 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: pause
+2024-01-15 17:03:36,326 INFO    HandlerThread:24532 [handler.py:handle_request_pause():708] stopping system metrics thread
+2024-01-15 17:03:36,326 INFO    HandlerThread:24532 [system_monitor.py:finish():203] Stopping system monitor
+2024-01-15 17:03:36,326 DEBUG   SystemMonitor:24532 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-15 17:03:36,326 DEBUG   SystemMonitor:24532 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-01-15 17:03:36,326 DEBUG   SystemMonitor:24532 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-01-15 17:03:36,345 INFO    HandlerThread:24532 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-15 17:03:36,345 INFO    HandlerThread:24532 [interfaces.py:finish():202] Joined disk monitor
+2024-01-15 17:03:36,399 INFO    HandlerThread:24532 [interfaces.py:finish():202] Joined gpu monitor
+2024-01-15 17:03:36,399 INFO    HandlerThread:24532 [interfaces.py:finish():202] Joined memory monitor
+2024-01-15 17:03:36,399 INFO    HandlerThread:24532 [interfaces.py:finish():202] Joined network monitor
+2024-01-15 17:03:36,399 DEBUG   SenderThread:24532 [sender.py:send():382] send: stats
+2024-01-15 17:03:37,117 INFO    Thread-16 :24532 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240115_170321-ttxn1tlh\files\output.log
+2024-01-15 17:03:37,353 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-15 17:03:37,355 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-15 17:03:37,356 DEBUG   SenderThread:24532 [sender.py:send_request():409] send_request: stop_status
+2024-01-15 17:03:37,562 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:03:42,615 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:03:47,642 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:03:52,372 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-15 17:03:52,372 DEBUG   SenderThread:24532 [sender.py:send_request():409] send_request: stop_status
+2024-01-15 17:03:52,372 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-15 17:03:53,627 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:03:54,264 INFO    Thread-16 :24532 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\wandb\run-20240115_170321-ttxn1tlh\files\config.yaml
+2024-01-15 17:03:58,902 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:04:03,936 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:04:07,372 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-15 17:04:07,372 DEBUG   SenderThread:24532 [sender.py:send_request():409] send_request: stop_status
+2024-01-15 17:04:07,387 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-15 17:04:09,582 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:04:14,617 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:04:19,640 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:04:22,385 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-15 17:04:22,385 DEBUG   SenderThread:24532 [sender.py:send_request():409] send_request: stop_status
+2024-01-15 17:04:22,400 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-15 17:04:25,631 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:04:30,669 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:04:35,711 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:04:37,392 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-15 17:04:37,392 DEBUG   SenderThread:24532 [sender.py:send_request():409] send_request: stop_status
+2024-01-15 17:04:37,402 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-15 17:04:41,601 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:04:46,633 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:04:51,657 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:04:52,389 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-15 17:04:52,389 DEBUG   SenderThread:24532 [sender.py:send_request():409] send_request: stop_status
+2024-01-15 17:04:52,405 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-15 17:04:57,648 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:05:02,678 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:05:07,398 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-15 17:05:07,399 DEBUG   SenderThread:24532 [sender.py:send_request():409] send_request: stop_status
+2024-01-15 17:05:07,413 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-15 17:05:08,692 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:05:13,727 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:05:18,757 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:05:22,402 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-15 17:05:22,402 DEBUG   SenderThread:24532 [sender.py:send_request():409] send_request: stop_status
+2024-01-15 17:05:22,417 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-15 17:05:24,596 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:05:29,664 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:05:34,687 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:05:37,412 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-15 17:05:37,412 DEBUG   SenderThread:24532 [sender.py:send_request():409] send_request: stop_status
+2024-01-15 17:05:37,428 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-15 17:05:39,727 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:05:44,752 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:05:49,778 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:05:52,424 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-15 17:05:52,424 DEBUG   SenderThread:24532 [sender.py:send_request():409] send_request: stop_status
+2024-01-15 17:05:52,440 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-15 17:05:55,592 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:06:00,621 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:06:05,663 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report
+2024-01-15 17:06:07,432 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-15 17:06:07,432 DEBUG   SenderThread:24532 [sender.py:send_request():409] send_request: stop_status
+2024-01-15 17:06:07,447 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-15 17:06:11,613 DEBUG   HandlerThread:24532 [handler.py:handle_request():146] handle_request: status_report

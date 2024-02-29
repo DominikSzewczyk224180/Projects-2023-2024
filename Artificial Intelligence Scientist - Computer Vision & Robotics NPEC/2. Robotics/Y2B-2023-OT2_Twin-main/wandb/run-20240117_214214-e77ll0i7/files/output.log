@@ -1,0 +1,38 @@
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Logging to runs/e77ll0i7\runs/e77ll0i7_1
+
+
+
+
+
+
+
+
+Traceback (most recent call last):
+  File "c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\task_11_test.py", line 67, in
+<module>
+    model.learn(total_timesteps=timesteps, callback=wandb_callback, progress_bar=True, tb_log_name=f"runs/{run.id}")
+  File "C:\Users\domin\anaconda3\envs\tf\lib\site-packages\stable_baselines3\ppo\ppo.py", line 315, in learn
+    return super().learn(
+  File "C:\Users\domin\anaconda3\envs\tf\lib\site-packages\stable_baselines3\common\on_policy_algorithm.py", line 277, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+  File "C:\Users\domin\anaconda3\envs\tf\lib\site-packages\stable_baselines3\common\on_policy_algorithm.py", line 194, in collect_rollouts
+    new_obs, rewards, dones, infos = env.step(clipped_actions)
+  File "C:\Users\domin\anaconda3\envs\tf\lib\site-packages\stable_baselines3\common\vec_env\base_vec_env.py", line 206, in step
+    return self.step_wait()
+  File "C:\Users\domin\anaconda3\envs\tf\lib\site-packages\stable_baselines3\common\vec_env\dummy_vec_env.py", line 58, in step_wait
+    obs, self.buf_rews[env_idx], terminated, truncated, self.buf_infos[env_idx] = self.envs[env_idx].step(
+  File "C:\Users\domin\anaconda3\envs\tf\lib\site-packages\stable_baselines3\common\monitor.py", line 94, in step
+    observation, reward, terminated, truncated, info = self.env.step(action)
+  File "c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\ot2_gym_wrapper.py", line 51, in
+step
+    observation = self.sim.run([action]) # Why do we need to pass the action as a list? Think about the simulation class.
+  File "c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\sim_class.py", line 250, in run
+    return self.get_states()
+  File "c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\2. Robotics\Y2B-2023-OT2_Twin-main\sim_class.py", line 301, in
+get_states
+    raw_joint_states = p.getJointStates(robotId, [0, 1, 2])
+pybullet.error: Not connected to physics server.
+[35m  11%[39m [38m━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[39m [32m1,103/10,000 [39m [ [33m0:00:18[39m < [36m0:02:25[39m , [31m62 it/s[39m ]

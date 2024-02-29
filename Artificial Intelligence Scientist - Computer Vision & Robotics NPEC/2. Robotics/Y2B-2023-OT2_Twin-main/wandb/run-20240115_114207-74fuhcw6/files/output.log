@@ -1,0 +1,24 @@
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 1        |
+|    ep_rew_mean     | 0.761    |
+| time/              |          |
+|    fps             | 2        |
+|    iterations      | 1        |
+|    time_elapsed    | 870      |
+|    total_timesteps | 2048     |
+---------------------------------
+{'n_steps': 2048, 'batch_size': 64, 'gamma': 0.99, 'learning_rate': 0.00025, 'ent_coef': 0.01, 'vf_coef': 0.5, 'max_grad_norm': 0.5, 'gae_lambda': 0.95, 'n_epochs': 4, 'clip_range': 0.2, 'clip_range_vf': None, 'verbose': 1, 'algo': 'PPO', 'policy_class': "<class 'stable_baselines3.common.policies.ActorCriticPolicy'>", 'device': 'cpu', 'policy_kwargs': '{}', 'num_timesteps': 0, 'seed': 'None', 'action_noise': 'None', 'start_time': 1705315328308049500, 'tensorboard_log': 'None', 'use_sde': 'False', 'sde_sample_freq': -1, 'ep_info_buffer': 'deque([], maxlen=100)', 'ep_success_buffer': 'deque([], maxlen=100)', 'env': '<stable_baselines3.common.vec_env.dummy_vec_env.DummyVecEnv object at 0x0000019884F95490>', 'observation_space': 'Box(-inf, inf, (6,), float32)', 'action_space': 'Box(-1.0, 1.0, (3,), float32)', 'n_envs': 1, 'rollout_buffer_class': "<class 'stable_baselines3.common.buffers.RolloutBuffer'>", 'rollout_buffer_kwargs': '{}', 'normalize_advantage': 'True', 'target_kl': 'None', 'lr_schedule': '<function constant_fn.<locals>.func at 0x0000019884FA80D0>', 'rollout_buffer': '<stable_baselines3.common.buffers.RolloutBuffer object at 0x0000019884F95520>', 'policy': 'ActorCriticPolicy(\n  (features_extractor): FlattenExtractor(\n    (flatten): Flatten(start_dim=1, end_dim=-1)\n  )\n  (pi_features_extractor): FlattenExtractor(\n    (flatten): Flatten(start_dim=1, end_dim=-1)\n  )\n  (vf_features_extractor): FlattenExtractor(\n    (flatten): Flatten(start_dim=1, end_dim=-1)\n  )\n  (mlp_extractor): MlpExtractor(\n    (policy_net): Sequential(\n      (0): Linear(in_features=6, out_features=64, bias=True)\n      (1): Tanh()\n      (2): Linear(in_features=64, out_features=64, bias=True)\n      (3): Tanh()\n    )\n    (value_net): Sequential(\n      (0): Linear(in_features=6, out_features=64, bias=True)\n      (1): Tanh()\n      (2): Linear(in_features=64, out_features=64, bias=True)\n      (3): Tanh()\n    )\n  )\n  (action_net): Linear(in_features=64, out_features=3, bias=True)\n  (value_net): Linear(in_features=64, out_features=1, bias=True)\n)'}
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 1        |
+|    ep_rew_mean     | 0.772    |
+| time/              |          |
+|    fps             | 2        |
+|    iterations      | 1        |
+|    time_elapsed    | 802      |
+|    total_timesteps | 2048     |
+---------------------------------

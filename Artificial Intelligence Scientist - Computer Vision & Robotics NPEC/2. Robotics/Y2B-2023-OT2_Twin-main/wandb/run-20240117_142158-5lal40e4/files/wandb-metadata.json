@@ -1,0 +1,62 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.9.16",
+    "heartbeatAt": "2024-01-17T13:22:00.449220",
+    "startedAt": "2024-01-17T13:21:58.724771",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--learning_rate",
+        "0.0001",
+        "--batch_size",
+        "64",
+        "--n_steps",
+        "2048",
+        "--n_epochs",
+        "10"
+    ],
+    "state": "running",
+    "program": "C:\\Users\\domin\\Desktop\\Year 2 Block B\\2023-24b-fai2-adsai-DominikSzewczyk224180\\2. Robotics\\Y2B-2023-OT2_Twin-main\\task_11.py",
+    "codePathLocal": "task_11.py",
+    "codePath": "2. Robotics\\Y2B-2023-OT2_Twin-main\\task_11.py",
+    "git": {
+        "remote": "https://github.com/BredaUniversityADSAI/2023-24b-fai2-adsai-DominikSzewczyk224180.git",
+        "commit": "d430e47fa15a2c0956cd2e2fa4aa78b7deda9aa2"
+    },
+    "email": "112881814+DominikSzewczyk224180@users.noreply.github.com",
+    "root": "C:/Users/domin/Desktop/Year 2 Block B/2023-24b-fai2-adsai-DominikSzewczyk224180",
+    "host": "MSI",
+    "username": "domin",
+    "executable": "C:\\Users\\domin\\anaconda3\\envs\\tf\\python.exe",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2304.0,
+        "min": 0.0,
+        "max": 2304.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2304.0,
+            "min": 0.0,
+            "max": 2304.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 934.0361289978027,
+            "used": 607.4850845336914
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 15.708477020263672
+    }
+}
