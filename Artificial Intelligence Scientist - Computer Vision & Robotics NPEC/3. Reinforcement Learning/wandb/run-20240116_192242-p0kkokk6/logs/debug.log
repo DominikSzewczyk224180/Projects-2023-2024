@@ -1,0 +1,191 @@
+2024-01-16 19:22:42,344 INFO    MainThread:2056 [wandb_setup.py:_flush():76] Current SDK version is 0.16.2
+2024-01-16 19:22:42,344 INFO    MainThread:2056 [wandb_setup.py:_flush():76] Configure stats pid to 2056
+2024-01-16 19:22:42,344 INFO    MainThread:2056 [wandb_setup.py:_flush():76] Loading settings from C:\Users\domin\.config\wandb\settings
+2024-01-16 19:22:42,344 INFO    MainThread:2056 [wandb_setup.py:_flush():76] Loading settings from c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\3. Reinforcement Learning\wandb\settings
+2024-01-16 19:22:42,344 INFO    MainThread:2056 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'api_key': '***REDACTED***'}
+2024-01-16 19:22:42,344 INFO    MainThread:2056 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-01-16 19:22:42,345 INFO    MainThread:2056 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-01-16 19:22:42,345 INFO    MainThread:2056 [wandb_init.py:_log_setup():526] Logging user logs to c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\3. Reinforcement Learning\wandb\run-20240116_192242-p0kkokk6\logs\debug.log
+2024-01-16 19:22:42,345 INFO    MainThread:2056 [wandb_init.py:_log_setup():527] Logging internal logs to c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\3. Reinforcement Learning\wandb\run-20240116_192242-p0kkokk6\logs\debug-internal.log
+2024-01-16 19:22:42,345 INFO    MainThread:2056 [wandb_init.py:_jupyter_setup():472] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x000002986AF9F250>
+2024-01-16 19:22:42,345 INFO    MainThread:2056 [wandb_init.py:init():566] calling init triggers
+2024-01-16 19:22:42,345 INFO    MainThread:2056 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {}
+2024-01-16 19:22:42,345 INFO    MainThread:2056 [wandb_init.py:init():616] starting backend
+2024-01-16 19:22:42,346 INFO    MainThread:2056 [wandb_init.py:init():620] setting up manager
+2024-01-16 19:22:42,347 INFO    MainThread:2056 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-01-16 19:22:42,349 INFO    MainThread:2056 [wandb_init.py:init():628] backend started and connected
+2024-01-16 19:22:42,359 INFO    MainThread:2056 [wandb_run.py:_label_probe_notebook():1294] probe notebook
+2024-01-16 19:22:42,359 INFO    MainThread:2056 [wandb_run.py:_label_probe_notebook():1304] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-01-16 19:22:42,359 INFO    MainThread:2056 [wandb_init.py:init():720] updated telemetry
+2024-01-16 19:22:42,412 INFO    MainThread:2056 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-01-16 19:22:42,834 INFO    MainThread:2056 [wandb_run.py:_on_init():2254] communicating current version
+2024-01-16 19:22:42,946 INFO    MainThread:2056 [wandb_run.py:_on_init():2263] got version response 
+2024-01-16 19:22:42,947 INFO    MainThread:2056 [wandb_init.py:init():804] starting run threads in backend
+2024-01-16 19:22:43,128 INFO    MainThread:2056 [wandb_run.py:_console_start():2233] atexit reg
+2024-01-16 19:22:43,128 INFO    MainThread:2056 [wandb_run.py:_redirect():2088] redirect: wrap_raw
+2024-01-16 19:22:43,129 INFO    MainThread:2056 [wandb_run.py:_redirect():2153] Wrapping output streams.
+2024-01-16 19:22:43,129 INFO    MainThread:2056 [wandb_run.py:_redirect():2178] Redirects installed.
+2024-01-16 19:22:43,130 INFO    MainThread:2056 [wandb_init.py:init():847] run started, returning control to user process
+2024-01-16 19:22:43,136 INFO    MainThread:2056 [wandb_run.py:_tensorboard_callback():1498] tensorboard callback: runs/p0kkokk6\runs/p0kkokk6_1, True
+2024-01-16 19:22:43,142 INFO    MainThread:2056 [wandb_run.py:_config_callback():1342] config_cb None None {'algo': 'PPO', 'policy_class': "<class 'stable_baselines3.common.policies.ActorCriticPolicy'>", 'device': 'cpu', 'verbose': 1, 'policy_kwargs': '{}', 'num_timesteps': 0, '_total_timesteps': 10000, '_num_timesteps_at_start': 0, 'seed': 'None', 'action_noise': 'None', 'start_time': 1705429363136472000, 'learning_rate': 0.0003, 'tensorboard_log': 'runs/p0kkokk6', '_last_obs': '[[-0.9899371  -0.14150807  0.43415567]]', '_last_episode_starts': '[ True]', '_last_original_obs': 'None', '_episode_num': 0, 'use_sde': 'False', 'sde_sample_freq': -1, '_current_progress_remaining': 1.0, '_stats_window_size': 100, 'ep_info_buffer': 'deque([], maxlen=100)', 'ep_success_buffer': 'deque([], maxlen=100)', '_n_updates': 0, '_custom_logger': 'False', 'env': '<stable_baselines3.common.vec_env.dummy_vec_env.DummyVecEnv object at 0x000002986CC00EE0>', '_vec_normalize_env': 'None', 'observation_space': 'Box([-1. -1. -8.], [1. 1. 8.], (3,), float32)', 'action_space': 'Box(-2.0, 2.0, (1,), float32)', 'n_envs': 1, 'n_steps': 2048, 'gamma': 0.99, 'gae_lambda': 0.95, 'ent_coef': 0.0, 'vf_coef': 0.5, 'max_grad_norm': 0.5, 'rollout_buffer_class': "<class 'stable_baselines3.common.buffers.RolloutBuffer'>", 'rollout_buffer_kwargs': '{}', 'batch_size': 64, 'n_epochs': 10, 'clip_range': '<function constant_fn.<locals>.func at 0x000002986CBF8AF0>', 'clip_range_vf': 'None', 'normalize_advantage': 'True', 'target_kl': 'None', 'lr_schedule': '<function constant_fn.<locals>.func at 0x000002986CBF8CA0>', 'rollout_buffer': '<stable_baselines3.common.buffers.RolloutBuffer object at 0x000002986CC00700>', 'policy': 'ActorCriticPolicy(\n  (features_extractor): FlattenExtractor(\n    (flatten): Flatten(start_dim=1, end_dim=-1)\n  )\n  (pi_features_extractor): FlattenExtractor(\n    (flatten): Flatten(start_dim=1, end_dim=-1)\n  )\n  (vf_features_extractor): FlattenExtractor(\n    (flatten): Flatten(start_dim=1, end_dim=-1)\n  )\n  (mlp_extractor): MlpExtractor(\n    (policy_net): Sequential(\n      (0): Linear(in_features=3, out_features=64, bias=True)\n      (1): Tanh()\n      (2): Linear(in_features=64, out_features=64, bias=True)\n      (3): Tanh()\n    )\n    (value_net): Sequential(\n      (0): Linear(in_features=3, out_features=64, bias=True)\n      (1): Tanh()\n      (2): Linear(in_features=64, out_features=64, bias=True)\n      (3): Tanh()\n    )\n  )\n  (action_net): Linear(in_features=64, out_features=1, bias=True)\n  (value_net): Linear(in_features=64, out_features=1, bias=True)\n)', '_logger': '<stable_baselines3.common.logger.Logger object at 0x000002986CC00220>'}
+2024-01-16 19:22:43,669 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:22:44,201 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:22:45,907 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:22:46,456 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:22:48,095 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:22:48,573 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:22:50,132 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:22:50,631 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:22:52,491 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:22:52,944 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:22:54,208 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:22:54,214 INFO    MainThread:2056 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-01-16 19:22:54,214 INFO    MainThread:2056 [wandb_init.py:_pause_backend():437] pausing backend
+2024-01-16 19:24:06,562 INFO    MainThread:2056 [wandb_init.py:_resume_backend():442] resuming backend
+2024-01-16 19:24:06,567 INFO    MainThread:2056 [wandb_run.py:_tensorboard_callback():1498] tensorboard callback: runs/p0kkokk6\runs/p0kkokk6_0, True
+2024-01-16 19:24:06,574 INFO    MainThread:2056 [wandb_run.py:_config_callback():1342] config_cb None None {}
+2024-01-16 19:24:06,903 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:07,288 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:08,589 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:08,980 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:10,257 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:10,676 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:11,942 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:12,333 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:13,570 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:13,962 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:15,019 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:15,031 INFO    MainThread:2056 [wandb_run.py:_tensorboard_callback():1498] tensorboard callback: runs/p0kkokk6\runs/p0kkokk6_0, True
+2024-01-16 19:24:15,037 INFO    MainThread:2056 [wandb_run.py:_config_callback():1342] config_cb None None {}
+2024-01-16 19:24:15,289 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:15,677 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:16,962 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:17,330 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:18,569 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:18,946 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:20,191 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:20,605 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:21,916 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:22,355 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:23,544 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:23,551 INFO    MainThread:2056 [wandb_run.py:_tensorboard_callback():1498] tensorboard callback: runs/p0kkokk6\runs/p0kkokk6_0, True
+2024-01-16 19:24:23,554 INFO    MainThread:2056 [wandb_run.py:_config_callback():1342] config_cb None None {}
+2024-01-16 19:24:23,686 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:24,112 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:25,615 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:26,073 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:27,398 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:27,784 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:29,131 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:29,525 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:30,862 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:31,336 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:32,714 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:32,724 INFO    MainThread:2056 [wandb_run.py:_tensorboard_callback():1498] tensorboard callback: runs/p0kkokk6\runs/p0kkokk6_0, True
+2024-01-16 19:24:32,728 INFO    MainThread:2056 [wandb_run.py:_config_callback():1342] config_cb None None {}
+2024-01-16 19:24:32,757 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:33,195 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:33,582 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:34,823 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:35,225 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:36,804 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:37,210 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:38,539 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:38,950 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:40,261 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:40,663 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:41,779 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:41,789 INFO    MainThread:2056 [wandb_run.py:_tensorboard_callback():1498] tensorboard callback: runs/p0kkokk6\runs/p0kkokk6_0, True
+2024-01-16 19:24:41,793 INFO    MainThread:2056 [wandb_run.py:_config_callback():1342] config_cb None None {}
+2024-01-16 19:24:42,134 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:42,742 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:43,978 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:44,343 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:45,588 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:45,967 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:47,381 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:47,757 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:49,013 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:49,381 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:50,420 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:50,434 INFO    MainThread:2056 [wandb_run.py:_tensorboard_callback():1498] tensorboard callback: runs/p0kkokk6\runs/p0kkokk6_0, True
+2024-01-16 19:24:50,437 INFO    MainThread:2056 [wandb_run.py:_config_callback():1342] config_cb None None {}
+2024-01-16 19:24:50,681 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:51,070 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:52,341 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:52,737 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:54,040 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:54,420 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:55,670 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:56,102 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:57,522 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:57,908 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:59,061 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:59,076 INFO    MainThread:2056 [wandb_run.py:_tensorboard_callback():1498] tensorboard callback: runs/p0kkokk6\runs/p0kkokk6_0, True
+2024-01-16 19:24:59,076 INFO    MainThread:2056 [wandb_run.py:_config_callback():1342] config_cb None None {}
+2024-01-16 19:24:59,220 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:24:59,624 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:01,101 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:01,546 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:03,077 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:03,456 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:04,759 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:05,145 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:06,398 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:06,833 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:08,029 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:08,042 INFO    MainThread:2056 [wandb_run.py:_tensorboard_callback():1498] tensorboard callback: runs/p0kkokk6\runs/p0kkokk6_0, True
+2024-01-16 19:25:08,045 INFO    MainThread:2056 [wandb_run.py:_config_callback():1342] config_cb None None {}
+2024-01-16 19:25:08,091 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:08,462 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:09,692 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:10,077 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:10,451 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:11,713 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:12,086 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:13,299 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:13,665 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:14,909 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:15,294 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:16,203 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:16,211 INFO    MainThread:2056 [wandb_run.py:_tensorboard_callback():1498] tensorboard callback: runs/p0kkokk6\runs/p0kkokk6_0, True
+2024-01-16 19:25:16,215 INFO    MainThread:2056 [wandb_run.py:_config_callback():1342] config_cb None None {}
+2024-01-16 19:25:16,614 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:16,999 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:18,207 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:18,568 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:19,815 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:20,193 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:21,427 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:21,824 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:23,040 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:23,412 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:24,428 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:24,436 INFO    MainThread:2056 [wandb_run.py:_tensorboard_callback():1498] tensorboard callback: runs/p0kkokk6\runs/p0kkokk6_0, True
+2024-01-16 19:25:24,439 INFO    MainThread:2056 [wandb_run.py:_config_callback():1342] config_cb None None {}
+2024-01-16 19:25:24,686 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:25,050 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:26,281 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:26,676 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:27,896 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:28,277 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:29,548 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:29,919 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:31,160 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:31,556 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:32,670 INFO    MainThread:2056 [sb3.py:save_model():153] Saving model checkpoint to models/p0kkokk6\model.zip
+2024-01-16 19:25:32,683 INFO    MainThread:2056 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-01-16 19:25:32,683 INFO    MainThread:2056 [wandb_init.py:_pause_backend():437] pausing backend
+2024-01-16 19:42:00,625 INFO    MainThread:2056 [wandb_init.py:_resume_backend():442] resuming backend
+2024-01-16 19:42:00,632 INFO    MainThread:2056 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-01-16 19:42:00,633 INFO    MainThread:2056 [wandb_init.py:_pause_backend():437] pausing backend
+2024-01-16 19:42:17,318 INFO    MainThread:2056 [wandb_init.py:_resume_backend():442] resuming backend
+2024-01-16 19:42:17,321 INFO    MainThread:2056 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-01-16 19:42:17,321 INFO    MainThread:2056 [wandb_init.py:_pause_backend():437] pausing backend
+2024-01-16 19:42:18,924 INFO    MainThread:2056 [wandb_init.py:_resume_backend():442] resuming backend
+2024-01-16 19:42:18,937 INFO    MainThread:2056 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-01-16 19:42:18,937 INFO    MainThread:2056 [wandb_init.py:_pause_backend():437] pausing backend
+2024-01-16 19:42:19,361 INFO    MainThread:2056 [wandb_init.py:_resume_backend():442] resuming backend
+2024-01-16 19:42:19,367 INFO    MainThread:2056 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-01-16 19:42:19,367 INFO    MainThread:2056 [wandb_init.py:_pause_backend():437] pausing backend

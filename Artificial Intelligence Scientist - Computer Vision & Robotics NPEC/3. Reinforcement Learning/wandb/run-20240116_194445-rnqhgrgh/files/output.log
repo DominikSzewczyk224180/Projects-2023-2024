@@ -1,0 +1,1112 @@
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Logging to runs/rnqhgrgh\runs/rnqhgrgh_1
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.05e+03 |
+| time/              |           |
+|    fps             | 2364      |
+|    iterations      | 1         |
+|    time_elapsed    | 0         |
+|    total_timesteps | 2048      |
+----------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.15e+03    |
+| time/                   |              |
+|    fps                  | 1596         |
+|    iterations           | 2            |
+|    time_elapsed         | 2            |
+|    total_timesteps      | 4096         |
+| train/                  |              |
+|    approx_kl            | 0.0013638469 |
+|    clip_fraction        | 0.00273      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.41        |
+|    explained_variance   | -0.0051      |
+|    learning_rate        | 0.0003       |
+|    loss                 | 2.87e+03     |
+|    n_updates            | 10           |
+|    policy_gradient_loss | -0.000537    |
+|    std                  | 0.993        |
+|    value_loss           | 7.36e+03     |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.16e+03    |
+| time/                   |              |
+|    fps                  | 1468         |
+|    iterations           | 3            |
+|    time_elapsed         | 4            |
+|    total_timesteps      | 6144         |
+| train/                  |              |
+|    approx_kl            | 0.0020957221 |
+|    clip_fraction        | 0.00483      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.41        |
+|    explained_variance   | 0.111        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 4.16e+03     |
+|    n_updates            | 20           |
+|    policy_gradient_loss | -0.00109     |
+|    std                  | 0.993        |
+|    value_loss           | 9.54e+03     |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.19e+03    |
+| time/                   |              |
+|    fps                  | 1404         |
+|    iterations           | 4            |
+|    time_elapsed         | 5            |
+|    total_timesteps      | 8192         |
+| train/                  |              |
+|    approx_kl            | 0.0005184029 |
+|    clip_fraction        | 4.88e-05     |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.41        |
+|    explained_variance   | 0.0764       |
+|    learning_rate        | 0.0003       |
+|    loss                 | 3.46e+03     |
+|    n_updates            | 30           |
+|    policy_gradient_loss | -0.000441    |
+|    std                  | 0.986        |
+|    value_loss           | 7.53e+03     |
+------------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 200         |
+|    ep_rew_mean          | -1.16e+03   |
+| time/                   |             |
+|    fps                  | 1334        |
+|    iterations           | 5           |
+|    time_elapsed         | 7           |
+|    total_timesteps      | 10240       |
+| train/                  |             |
+|    approx_kl            | 0.002640159 |
+|    clip_fraction        | 0.00962     |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.41       |
+|    explained_variance   | 0.017       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 4.13e+03    |
+|    n_updates            | 40          |
+|    policy_gradient_loss | -0.0014     |
+|    std                  | 0.985       |
+|    value_loss           | 8.75e+03    |
+-----------------------------------------
+Logging to runs/rnqhgrgh\runs/rnqhgrgh_0
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.16e+03 |
+| time/              |           |
+|    fps             | 2387      |
+|    iterations      | 1         |
+|    time_elapsed    | 0         |
+|    total_timesteps | 12288     |
+----------------------------------
+[34m[1mwandb[39m[22m: [33mWARNING[39m When using several event log directories, please call `wandb.tensorboard.patch(root_logdir="...")` before `wandb.init`
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.17e+03    |
+| time/                   |              |
+|    fps                  | 1626         |
+|    iterations           | 2            |
+|    time_elapsed         | 2            |
+|    total_timesteps      | 14336        |
+| train/                  |              |
+|    approx_kl            | 0.0019517147 |
+|    clip_fraction        | 0.00669      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.41        |
+|    explained_variance   | 0.00236      |
+|    learning_rate        | 0.0003       |
+|    loss                 | 3.43e+03     |
+|    n_updates            | 60           |
+|    policy_gradient_loss | -0.000786    |
+|    std                  | 0.993        |
+|    value_loss           | 7.53e+03     |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.18e+03    |
+| time/                   |              |
+|    fps                  | 1371         |
+|    iterations           | 3            |
+|    time_elapsed         | 4            |
+|    total_timesteps      | 16384        |
+| train/                  |              |
+|    approx_kl            | 0.0017355975 |
+|    clip_fraction        | 0.00259      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.42        |
+|    explained_variance   | 0.00139      |
+|    learning_rate        | 0.0003       |
+|    loss                 | 3.55e+03     |
+|    n_updates            | 70           |
+|    policy_gradient_loss | -0.00126     |
+|    std                  | 1            |
+|    value_loss           | 8.23e+03     |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.18e+03    |
+| time/                   |              |
+|    fps                  | 1267         |
+|    iterations           | 4            |
+|    time_elapsed         | 6            |
+|    total_timesteps      | 18432        |
+| train/                  |              |
+|    approx_kl            | 0.0030479087 |
+|    clip_fraction        | 0.00825      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.42        |
+|    explained_variance   | 0.00128      |
+|    learning_rate        | 0.0003       |
+|    loss                 | 3.43e+03     |
+|    n_updates            | 80           |
+|    policy_gradient_loss | -0.00157     |
+|    std                  | 0.99         |
+|    value_loss           | 7.26e+03     |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.18e+03    |
+| time/                   |              |
+|    fps                  | 1262         |
+|    iterations           | 5            |
+|    time_elapsed         | 8            |
+|    total_timesteps      | 20480        |
+| train/                  |              |
+|    approx_kl            | 0.0010923595 |
+|    clip_fraction        | 0.00186      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.42        |
+|    explained_variance   | 0.00111      |
+|    learning_rate        | 0.0003       |
+|    loss                 | 3.73e+03     |
+|    n_updates            | 90           |
+|    policy_gradient_loss | -0.000631    |
+|    std                  | 1.01         |
+|    value_loss           | 7.7e+03      |
+------------------------------------------
+Logging to runs/rnqhgrgh\runs/rnqhgrgh_0
+[34m[1mwandb[39m[22m: [33mWARNING[39m When using several event log directories, please call `wandb.tensorboard.patch(root_logdir="...")` before `wandb.init`
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -1.2e+03 |
+| time/              |          |
+|    fps             | 2589     |
+|    iterations      | 1        |
+|    time_elapsed    | 0        |
+|    total_timesteps | 22528    |
+---------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.2e+03     |
+| time/                   |              |
+|    fps                  | 1522         |
+|    iterations           | 2            |
+|    time_elapsed         | 2            |
+|    total_timesteps      | 24576        |
+| train/                  |              |
+|    approx_kl            | 0.0025475014 |
+|    clip_fraction        | 0.0109       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.39        |
+|    explained_variance   | 0.000515     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 3.39e+03     |
+|    n_updates            | 110          |
+|    policy_gradient_loss | -0.00146     |
+|    std                  | 0.97         |
+|    value_loss           | 8.41e+03     |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.21e+03    |
+| time/                   |              |
+|    fps                  | 1426         |
+|    iterations           | 3            |
+|    time_elapsed         | 4            |
+|    total_timesteps      | 26624        |
+| train/                  |              |
+|    approx_kl            | 0.0029175163 |
+|    clip_fraction        | 0.01         |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.38        |
+|    explained_variance   | 0.000428     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 3.44e+03     |
+|    n_updates            | 120          |
+|    policy_gradient_loss | -0.00161     |
+|    std                  | 0.959        |
+|    value_loss           | 6.87e+03     |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.23e+03    |
+| time/                   |              |
+|    fps                  | 1388         |
+|    iterations           | 4            |
+|    time_elapsed         | 5            |
+|    total_timesteps      | 28672        |
+| train/                  |              |
+|    approx_kl            | 0.0023704793 |
+|    clip_fraction        | 0.0116       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.38        |
+|    explained_variance   | 0.000529     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 3.22e+03     |
+|    n_updates            | 130          |
+|    policy_gradient_loss | -0.00144     |
+|    std                  | 0.958        |
+|    value_loss           | 7.41e+03     |
+------------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 200         |
+|    ep_rew_mean          | -1.26e+03   |
+| time/                   |             |
+|    fps                  | 1359        |
+|    iterations           | 5           |
+|    time_elapsed         | 7           |
+|    total_timesteps      | 30720       |
+| train/                  |             |
+|    approx_kl            | 0.003451197 |
+|    clip_fraction        | 0.0159      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.37       |
+|    explained_variance   | 0.00029     |
+|    learning_rate        | 0.0003      |
+|    loss                 | 4.25e+03    |
+|    n_updates            | 140         |
+|    policy_gradient_loss | -0.00264    |
+|    std                  | 0.937       |
+|    value_loss           | 9.35e+03    |
+-----------------------------------------
+Logging to runs/rnqhgrgh\runs/rnqhgrgh_0
+[34m[1mwandb[39m[22m: [33mWARNING[39m When using several event log directories, please call `wandb.tensorboard.patch(root_logdir="...")` before `wandb.init`
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.26e+03 |
+| time/              |           |
+|    fps             | 2576      |
+|    iterations      | 1         |
+|    time_elapsed    | 0         |
+|    total_timesteps | 32768     |
+----------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.26e+03    |
+| time/                   |              |
+|    fps                  | 1713         |
+|    iterations           | 2            |
+|    time_elapsed         | 2            |
+|    total_timesteps      | 34816        |
+| train/                  |              |
+|    approx_kl            | 0.0025087968 |
+|    clip_fraction        | 0.0157       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.35        |
+|    explained_variance   | 0.000511     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 2.75e+03     |
+|    n_updates            | 160          |
+|    policy_gradient_loss | -0.00165     |
+|    std                  | 0.928        |
+|    value_loss           | 6.23e+03     |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.25e+03    |
+| time/                   |              |
+|    fps                  | 1517         |
+|    iterations           | 3            |
+|    time_elapsed         | 4            |
+|    total_timesteps      | 36864        |
+| train/                  |              |
+|    approx_kl            | 0.0027537902 |
+|    clip_fraction        | 0.00376      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.34        |
+|    explained_variance   | 0.00036      |
+|    learning_rate        | 0.0003       |
+|    loss                 | 2.48e+03     |
+|    n_updates            | 170          |
+|    policy_gradient_loss | -0.00124     |
+|    std                  | 0.92         |
+|    value_loss           | 5.05e+03     |
+------------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 200         |
+|    ep_rew_mean          | -1.24e+03   |
+| time/                   |             |
+|    fps                  | 1401        |
+|    iterations           | 4           |
+|    time_elapsed         | 5           |
+|    total_timesteps      | 38912       |
+| train/                  |             |
+|    approx_kl            | 0.006588123 |
+|    clip_fraction        | 0.0441      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.33       |
+|    explained_variance   | 0.000247    |
+|    learning_rate        | 0.0003      |
+|    loss                 | 2.32e+03    |
+|    n_updates            | 180         |
+|    policy_gradient_loss | -0.00421    |
+|    std                  | 0.916       |
+|    value_loss           | 5.06e+03    |
+-----------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.21e+03    |
+| time/                   |              |
+|    fps                  | 1377         |
+|    iterations           | 5            |
+|    time_elapsed         | 7            |
+|    total_timesteps      | 40960        |
+| train/                  |              |
+|    approx_kl            | 0.0034315074 |
+|    clip_fraction        | 0.0163       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.34        |
+|    explained_variance   | 0.000114     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 1.98e+03     |
+|    n_updates            | 190          |
+|    policy_gradient_loss | -0.00204     |
+|    std                  | 0.925        |
+|    value_loss           | 4.48e+03     |
+------------------------------------------
+[34m[1mwandb[39m[22m: [33mWARNING[39m When using several event log directories, please call `wandb.tensorboard.patch(root_logdir="...")` before `wandb.init`
+Logging to runs/rnqhgrgh\runs/rnqhgrgh_0
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -1.2e+03 |
+| time/              |          |
+|    fps             | 2557     |
+|    iterations      | 1        |
+|    time_elapsed    | 0        |
+|    total_timesteps | 43008    |
+---------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.19e+03    |
+| time/                   |              |
+|    fps                  | 1690         |
+|    iterations           | 2            |
+|    time_elapsed         | 2            |
+|    total_timesteps      | 45056        |
+| train/                  |              |
+|    approx_kl            | 0.0013744083 |
+|    clip_fraction        | 0.00234      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.33        |
+|    explained_variance   | 3.71e-05     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 2.53e+03     |
+|    n_updates            | 210          |
+|    policy_gradient_loss | -0.00154     |
+|    std                  | 0.91         |
+|    value_loss           | 5.8e+03      |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.17e+03    |
+| time/                   |              |
+|    fps                  | 1432         |
+|    iterations           | 3            |
+|    time_elapsed         | 4            |
+|    total_timesteps      | 47104        |
+| train/                  |              |
+|    approx_kl            | 0.0030895984 |
+|    clip_fraction        | 0.0229       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.31        |
+|    explained_variance   | 4.88e-05     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 2.11e+03     |
+|    n_updates            | 220          |
+|    policy_gradient_loss | -0.00241     |
+|    std                  | 0.884        |
+|    value_loss           | 4.1e+03      |
+------------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 200         |
+|    ep_rew_mean          | -1.15e+03   |
+| time/                   |             |
+|    fps                  | 1386        |
+|    iterations           | 4           |
+|    time_elapsed         | 5           |
+|    total_timesteps      | 49152       |
+| train/                  |             |
+|    approx_kl            | 0.003721464 |
+|    clip_fraction        | 0.0282      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.28       |
+|    explained_variance   | 3.56e-05    |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.83e+03    |
+|    n_updates            | 230         |
+|    policy_gradient_loss | -0.00374    |
+|    std                  | 0.86        |
+|    value_loss           | 4.49e+03    |
+-----------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.14e+03    |
+| time/                   |              |
+|    fps                  | 1364         |
+|    iterations           | 5            |
+|    time_elapsed         | 7            |
+|    total_timesteps      | 51200        |
+| train/                  |              |
+|    approx_kl            | 0.0037759389 |
+|    clip_fraction        | 0.0257       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.26        |
+|    explained_variance   | 2.67e-05     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 2.31e+03     |
+|    n_updates            | 240          |
+|    policy_gradient_loss | -0.00318     |
+|    std                  | 0.846        |
+|    value_loss           | 5.24e+03     |
+------------------------------------------
+[34m[1mwandb[39m[22m: [33mWARNING[39m When using several event log directories, please call `wandb.tensorboard.patch(root_logdir="...")` before `wandb.init`
+Logging to runs/rnqhgrgh\runs/rnqhgrgh_0
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.15e+03 |
+| time/              |           |
+|    fps             | 2001      |
+|    iterations      | 1         |
+|    time_elapsed    | 1         |
+|    total_timesteps | 53248     |
+----------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 200         |
+|    ep_rew_mean          | -1.14e+03   |
+| time/                   |             |
+|    fps                  | 1545        |
+|    iterations           | 2           |
+|    time_elapsed         | 2           |
+|    total_timesteps      | 55296       |
+| train/                  |             |
+|    approx_kl            | 0.002753581 |
+|    clip_fraction        | 0.0195      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.25       |
+|    explained_variance   | 2.31e-05    |
+|    learning_rate        | 0.0003      |
+|    loss                 | 2.61e+03    |
+|    n_updates            | 260         |
+|    policy_gradient_loss | -0.0021     |
+|    std                  | 0.838       |
+|    value_loss           | 5.09e+03    |
+-----------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.14e+03    |
+| time/                   |              |
+|    fps                  | 1445         |
+|    iterations           | 3            |
+|    time_elapsed         | 4            |
+|    total_timesteps      | 57344        |
+| train/                  |              |
+|    approx_kl            | 0.0045036366 |
+|    clip_fraction        | 0.0394       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.24        |
+|    explained_variance   | 3.89e-05     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 1.53e+03     |
+|    n_updates            | 270          |
+|    policy_gradient_loss | -0.00419     |
+|    std                  | 0.829        |
+|    value_loss           | 3.34e+03     |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.14e+03    |
+| time/                   |              |
+|    fps                  | 1398         |
+|    iterations           | 4            |
+|    time_elapsed         | 5            |
+|    total_timesteps      | 59392        |
+| train/                  |              |
+|    approx_kl            | 0.0040600644 |
+|    clip_fraction        | 0.0187       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.23        |
+|    explained_variance   | 1.91e-05     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 1.62e+03     |
+|    n_updates            | 280          |
+|    policy_gradient_loss | -0.00184     |
+|    std                  | 0.832        |
+|    value_loss           | 3.67e+03     |
+------------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 200         |
+|    ep_rew_mean          | -1.15e+03   |
+| time/                   |             |
+|    fps                  | 1323        |
+|    iterations           | 5           |
+|    time_elapsed         | 7           |
+|    total_timesteps      | 61440       |
+| train/                  |             |
+|    approx_kl            | 0.004797669 |
+|    clip_fraction        | 0.0289      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.25       |
+|    explained_variance   | 1.54e-05    |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.83e+03    |
+|    n_updates            | 290         |
+|    policy_gradient_loss | -0.00318    |
+|    std                  | 0.851       |
+|    value_loss           | 4e+03       |
+-----------------------------------------
+Logging to runs/rnqhgrgh\runs/rnqhgrgh_0
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.12e+03 |
+| time/              |           |
+|    fps             | 2589      |
+|    iterations      | 1         |
+|    time_elapsed    | 0         |
+|    total_timesteps | 63488     |
+----------------------------------
+[34m[1mwandb[39m[22m: [33mWARNING[39m When using several event log directories, please call `wandb.tensorboard.patch(root_logdir="...")` before `wandb.init`
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.13e+03    |
+| time/                   |              |
+|    fps                  | 1692         |
+|    iterations           | 2            |
+|    time_elapsed         | 2            |
+|    total_timesteps      | 65536        |
+| train/                  |              |
+|    approx_kl            | 0.0032468312 |
+|    clip_fraction        | 0.0176       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.24        |
+|    explained_variance   | 9.72e-06     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 1.4e+03      |
+|    n_updates            | 310          |
+|    policy_gradient_loss | -0.00127     |
+|    std                  | 0.841        |
+|    value_loss           | 3.2e+03      |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.11e+03    |
+| time/                   |              |
+|    fps                  | 1446         |
+|    iterations           | 3            |
+|    time_elapsed         | 4            |
+|    total_timesteps      | 67584        |
+| train/                  |              |
+|    approx_kl            | 0.0028996938 |
+|    clip_fraction        | 0.0132       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.24        |
+|    explained_variance   | 8.94e-06     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 1.57e+03     |
+|    n_updates            | 320          |
+|    policy_gradient_loss | -0.00157     |
+|    std                  | 0.828        |
+|    value_loss           | 3.11e+03     |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.1e+03     |
+| time/                   |              |
+|    fps                  | 1388         |
+|    iterations           | 4            |
+|    time_elapsed         | 5            |
+|    total_timesteps      | 69632        |
+| train/                  |              |
+|    approx_kl            | 0.0036189368 |
+|    clip_fraction        | 0.0373       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.23        |
+|    explained_variance   | 8.64e-06     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 1.2e+03      |
+|    n_updates            | 330          |
+|    policy_gradient_loss | -0.00228     |
+|    std                  | 0.823        |
+|    value_loss           | 2.44e+03     |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.07e+03    |
+| time/                   |              |
+|    fps                  | 1363         |
+|    iterations           | 5            |
+|    time_elapsed         | 7            |
+|    total_timesteps      | 71680        |
+| train/                  |              |
+|    approx_kl            | 0.0026299548 |
+|    clip_fraction        | 0.0254       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.21        |
+|    explained_variance   | 6.97e-06     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 978          |
+|    n_updates            | 340          |
+|    policy_gradient_loss | -0.00226     |
+|    std                  | 0.808        |
+|    value_loss           | 2.32e+03     |
+------------------------------------------
+Logging to runs/rnqhgrgh\runs/rnqhgrgh_0
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.07e+03 |
+| time/              |           |
+|    fps             | 2553      |
+|    iterations      | 1         |
+|    time_elapsed    | 0         |
+|    total_timesteps | 73728     |
+----------------------------------
+[34m[1mwandb[39m[22m: [33mWARNING[39m When using several event log directories, please call `wandb.tensorboard.patch(root_logdir="...")` before `wandb.init`
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.08e+03    |
+| time/                   |              |
+|    fps                  | 1553         |
+|    iterations           | 2            |
+|    time_elapsed         | 2            |
+|    total_timesteps      | 75776        |
+| train/                  |              |
+|    approx_kl            | 0.0033591585 |
+|    clip_fraction        | 0.00903      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.21        |
+|    explained_variance   | 3.46e-06     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 1.49e+03     |
+|    n_updates            | 360          |
+|    policy_gradient_loss | -0.00023     |
+|    std                  | 0.815        |
+|    value_loss           | 3.29e+03     |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.07e+03    |
+| time/                   |              |
+|    fps                  | 1452         |
+|    iterations           | 3            |
+|    time_elapsed         | 4            |
+|    total_timesteps      | 77824        |
+| train/                  |              |
+|    approx_kl            | 0.0065150238 |
+|    clip_fraction        | 0.0436       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.21        |
+|    explained_variance   | 5.48e-06     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 1.15e+03     |
+|    n_updates            | 370          |
+|    policy_gradient_loss | -0.00325     |
+|    std                  | 0.812        |
+|    value_loss           | 2.48e+03     |
+------------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 200         |
+|    ep_rew_mean          | -1.06e+03   |
+| time/                   |             |
+|    fps                  | 1402        |
+|    iterations           | 4           |
+|    time_elapsed         | 5           |
+|    total_timesteps      | 79872       |
+| train/                  |             |
+|    approx_kl            | 0.004376979 |
+|    clip_fraction        | 0.0209      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.21       |
+|    explained_variance   | 5.48e-06    |
+|    learning_rate        | 0.0003      |
+|    loss                 | 750         |
+|    n_updates            | 380         |
+|    policy_gradient_loss | -0.00127    |
+|    std                  | 0.81        |
+|    value_loss           | 2.11e+03    |
+-----------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.07e+03    |
+| time/                   |              |
+|    fps                  | 1340         |
+|    iterations           | 5            |
+|    time_elapsed         | 7            |
+|    total_timesteps      | 81920        |
+| train/                  |              |
+|    approx_kl            | 0.0048071067 |
+|    clip_fraction        | 0.0327       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.22        |
+|    explained_variance   | 5.13e-06     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 1.05e+03     |
+|    n_updates            | 390          |
+|    policy_gradient_loss | -0.00204     |
+|    std                  | 0.822        |
+|    value_loss           | 2.59e+03     |
+------------------------------------------
+[34m[1mwandb[39m[22m: [33mWARNING[39m When using several event log directories, please call `wandb.tensorboard.patch(root_logdir="...")` before `wandb.init`
+Logging to runs/rnqhgrgh\runs/rnqhgrgh_0
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.06e+03 |
+| time/              |           |
+|    fps             | 2631      |
+|    iterations      | 1         |
+|    time_elapsed    | 0         |
+|    total_timesteps | 83968     |
+----------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.05e+03    |
+| time/                   |              |
+|    fps                  | 1688         |
+|    iterations           | 2            |
+|    time_elapsed         | 2            |
+|    total_timesteps      | 86016        |
+| train/                  |              |
+|    approx_kl            | 0.0035787206 |
+|    clip_fraction        | 0.0307       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.21        |
+|    explained_variance   | 4.23e-06     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 504          |
+|    n_updates            | 410          |
+|    policy_gradient_loss | -0.00299     |
+|    std                  | 0.82         |
+|    value_loss           | 1.63e+03     |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.05e+03    |
+| time/                   |              |
+|    fps                  | 1528         |
+|    iterations           | 3            |
+|    time_elapsed         | 4            |
+|    total_timesteps      | 88064        |
+| train/                  |              |
+|    approx_kl            | 0.0065733125 |
+|    clip_fraction        | 0.0468       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.22        |
+|    explained_variance   | 3.34e-06     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 663          |
+|    n_updates            | 420          |
+|    policy_gradient_loss | -0.00246     |
+|    std                  | 0.821        |
+|    value_loss           | 1.45e+03     |
+------------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 200         |
+|    ep_rew_mean          | -1.05e+03   |
+| time/                   |             |
+|    fps                  | 1391        |
+|    iterations           | 4           |
+|    time_elapsed         | 5           |
+|    total_timesteps      | 90112       |
+| train/                  |             |
+|    approx_kl            | 0.007383827 |
+|    clip_fraction        | 0.0582      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.23       |
+|    explained_variance   | 2.44e-06    |
+|    learning_rate        | 0.0003      |
+|    loss                 | 762         |
+|    n_updates            | 430         |
+|    policy_gradient_loss | -0.00327    |
+|    std                  | 0.826       |
+|    value_loss           | 1.52e+03    |
+-----------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.04e+03    |
+| time/                   |              |
+|    fps                  | 1366         |
+|    iterations           | 5            |
+|    time_elapsed         | 7            |
+|    total_timesteps      | 92160        |
+| train/                  |              |
+|    approx_kl            | 0.0041909427 |
+|    clip_fraction        | 0.0347       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.22        |
+|    explained_variance   | 2.32e-06     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 574          |
+|    n_updates            | 440          |
+|    policy_gradient_loss | -0.00262     |
+|    std                  | 0.81         |
+|    value_loss           | 1.34e+03     |
+------------------------------------------
+[34m[1mwandb[39m[22m: [33mWARNING[39m When using several event log directories, please call `wandb.tensorboard.patch(root_logdir="...")` before `wandb.init`
+Logging to runs/rnqhgrgh\runs/rnqhgrgh_0
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.03e+03 |
+| time/              |           |
+|    fps             | 2628      |
+|    iterations      | 1         |
+|    time_elapsed    | 0         |
+|    total_timesteps | 94208     |
+----------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.02e+03    |
+| time/                   |              |
+|    fps                  | 1574         |
+|    iterations           | 2            |
+|    time_elapsed         | 2            |
+|    total_timesteps      | 96256        |
+| train/                  |              |
+|    approx_kl            | 0.0039033392 |
+|    clip_fraction        | 0.034        |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.22        |
+|    explained_variance   | 1.73e-06     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 426          |
+|    n_updates            | 460          |
+|    policy_gradient_loss | -0.00187     |
+|    std                  | 0.827        |
+|    value_loss           | 1.2e+03      |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.01e+03    |
+| time/                   |              |
+|    fps                  | 1420         |
+|    iterations           | 3            |
+|    time_elapsed         | 4            |
+|    total_timesteps      | 98304        |
+| train/                  |              |
+|    approx_kl            | 0.0053289244 |
+|    clip_fraction        | 0.0602       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.23        |
+|    explained_variance   | 1.85e-06     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 764          |
+|    n_updates            | 470          |
+|    policy_gradient_loss | -0.00549     |
+|    std                  | 0.833        |
+|    value_loss           | 1.7e+03      |
+------------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 200         |
+|    ep_rew_mean          | -1.01e+03   |
+| time/                   |             |
+|    fps                  | 1389        |
+|    iterations           | 4           |
+|    time_elapsed         | 5           |
+|    total_timesteps      | 100352      |
+| train/                  |             |
+|    approx_kl            | 0.004766757 |
+|    clip_fraction        | 0.0339      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.22       |
+|    explained_variance   | 1.61e-06    |
+|    learning_rate        | 0.0003      |
+|    loss                 | 554         |
+|    n_updates            | 480         |
+|    policy_gradient_loss | -0.00287    |
+|    std                  | 0.811       |
+|    value_loss           | 1.23e+03    |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 200         |
+|    ep_rew_mean          | -1e+03      |
+| time/                   |             |
+|    fps                  | 1363        |
+|    iterations           | 5           |
+|    time_elapsed         | 7           |
+|    total_timesteps      | 102400      |
+| train/                  |             |
+|    approx_kl            | 0.003738073 |
+|    clip_fraction        | 0.0191      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.21       |
+|    explained_variance   | 2.03e-06    |
+|    learning_rate        | 0.0003      |
+|    loss                 | 599         |
+|    n_updates            | 490         |
+|    policy_gradient_loss | -0.000178   |
+|    std                  | 0.817       |
+|    value_loss           | 1.3e+03     |
+-----------------------------------------
+[34m[1mwandb[39m[22m: [33mWARNING[39m When using several event log directories, please call `wandb.tensorboard.patch(root_logdir="...")` before `wandb.init`
+Logging to runs/rnqhgrgh\runs/rnqhgrgh_0
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -1e+03   |
+| time/              |          |
+|    fps             | 2397     |
+|    iterations      | 1        |
+|    time_elapsed    | 0        |
+|    total_timesteps | 104448   |
+---------------------------------
+----------------------------------------
+| rollout/                |            |
+|    ep_len_mean          | 200        |
+|    ep_rew_mean          | -1.01e+03  |
+| time/                   |            |
+|    fps                  | 1681       |
+|    iterations           | 2          |
+|    time_elapsed         | 2          |
+|    total_timesteps      | 106496     |
+| train/                  |            |
+|    approx_kl            | 0.00615493 |
+|    clip_fraction        | 0.0646     |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -1.2       |
+|    explained_variance   | 1.25e-06   |
+|    learning_rate        | 0.0003     |
+|    loss                 | 379        |
+|    n_updates            | 510        |
+|    policy_gradient_loss | -0.00499   |
+|    std                  | 0.801      |
+|    value_loss           | 901        |
+----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 200         |
+|    ep_rew_mean          | -1e+03      |
+| time/                   |             |
+|    fps                  | 1517        |
+|    iterations           | 3           |
+|    time_elapsed         | 4           |
+|    total_timesteps      | 108544      |
+| train/                  |             |
+|    approx_kl            | 0.004128242 |
+|    clip_fraction        | 0.0294      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.2        |
+|    explained_variance   | 7.15e-07    |
+|    learning_rate        | 0.0003      |
+|    loss                 | 448         |
+|    n_updates            | 520         |
+|    policy_gradient_loss | -0.0015     |
+|    std                  | 0.806       |
+|    value_loss           | 1.04e+03    |
+-----------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.01e+03    |
+| time/                   |              |
+|    fps                  | 1442         |
+|    iterations           | 4            |
+|    time_elapsed         | 5            |
+|    total_timesteps      | 110592       |
+| train/                  |              |
+|    approx_kl            | 0.0034873346 |
+|    clip_fraction        | 0.0254       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.21        |
+|    explained_variance   | 1.25e-06     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 507          |
+|    n_updates            | 530          |
+|    policy_gradient_loss | -0.0017      |
+|    std                  | 0.81         |
+|    value_loss           | 1.2e+03      |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.02e+03    |
+| time/                   |              |
+|    fps                  | 1366         |
+|    iterations           | 5            |
+|    time_elapsed         | 7            |
+|    total_timesteps      | 112640       |
+| train/                  |              |
+|    approx_kl            | 0.0046751807 |
+|    clip_fraction        | 0.0417       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.2         |
+|    explained_variance   | 5.96e-07     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 626          |
+|    n_updates            | 540          |
+|    policy_gradient_loss | -0.00215     |
+|    std                  | 0.803        |
+|    value_loss           | 1.37e+03     |
+------------------------------------------
+usage: ipykernel_launcher.py [-h] [--learning_rate LEARNING_RATE]
+                             [--batch_size BATCH_SIZE] [--n_steps N_STEPS]
+                             [--n_epochs N_EPOCHS]
+ipykernel_launcher.py: error: unrecognized arguments: --f=c:\Users\domin\AppData\Roaming\jupyter\runtime\kernel-v2-16040okxZIa4FlPxn.json
+c:\Users\domin\anaconda3\envs\tf\lib\site-packages\IPython\core\interactiveshell.py:3468: UserWarning: To exit: use 'exit', 'quit', or Ctrl-D.
+  warn("To exit: use 'exit', 'quit', or Ctrl-D.", stacklevel=1)
+Warning: Unknown arguments ['--f=c:\\Users\\domin\\AppData\\Roaming\\jupyter\\runtime\\kernel-v2-16040okxZIa4FlPxn.json']
+0.0003 64 2048 10
+Using cpu device
+Wrapping the env with a `Monitor` wrapper

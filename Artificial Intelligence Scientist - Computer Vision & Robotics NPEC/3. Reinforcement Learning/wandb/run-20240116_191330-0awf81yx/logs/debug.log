@@ -1,0 +1,117 @@
+2024-01-16 19:13:30,091 INFO    MainThread:22408 [wandb_setup.py:_flush():76] Current SDK version is 0.16.2
+2024-01-16 19:13:30,092 INFO    MainThread:22408 [wandb_setup.py:_flush():76] Configure stats pid to 22408
+2024-01-16 19:13:30,092 INFO    MainThread:22408 [wandb_setup.py:_flush():76] Loading settings from C:\Users\domin\.config\wandb\settings
+2024-01-16 19:13:30,092 INFO    MainThread:22408 [wandb_setup.py:_flush():76] Loading settings from c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\3. Reinforcement Learning\wandb\settings
+2024-01-16 19:13:30,092 INFO    MainThread:22408 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-01-16 19:13:30,092 INFO    MainThread:22408 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-01-16 19:13:30,092 INFO    MainThread:22408 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-01-16 19:13:30,092 WARNING MainThread:22408 [wandb_setup.py:_flush():76] interrupted
+Traceback (most recent call last):
+  File "c:\Users\domin\anaconda3\envs\tf\lib\site-packages\IPython\core\interactiveshell.py", line 3460, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "C:\Users\domin\AppData\Local\Temp\ipykernel_22408\3739779065.py", line 5, in <module>
+    run = wandb.init(project="sb3_pendulum_demo",sync_tensorboard=True)
+  File "c:\Users\domin\anaconda3\envs\tf\lib\site-packages\wandb\sdk\wandb_init.py", line 1199, in init
+    raise e
+  File "c:\Users\domin\anaconda3\envs\tf\lib\site-packages\wandb\sdk\wandb_init.py", line 1172, in init
+    wi.setup(kwargs)
+  File "c:\Users\domin\anaconda3\envs\tf\lib\site-packages\wandb\sdk\wandb_init.py", line 306, in setup
+    wandb_login._login(
+  File "c:\Users\domin\anaconda3\envs\tf\lib\site-packages\wandb\sdk\wandb_login.py", line 307, in _login
+    logged_in = wlogin.login()
+  File "c:\Users\domin\anaconda3\envs\tf\lib\site-packages\wandb\sdk\wandb_login.py", line 159, in login
+    self.login_display()
+  File "c:\Users\domin\anaconda3\envs\tf\lib\site-packages\wandb\sdk\wandb_login.py", line 164, in login_display
+    username = self._wl._get_username()
+  File "c:\Users\domin\anaconda3\envs\tf\lib\site-packages\wandb\sdk\wandb_setup.py", line 194, in _get_username
+    self._load_viewer()
+  File "c:\Users\domin\anaconda3\envs\tf\lib\site-packages\wandb\sdk\wandb_setup.py", line 216, in _load_viewer
+    s.query_with_timeout()
+  File "c:\Users\domin\anaconda3\envs\tf\lib\site-packages\wandb\sdk\lib\server.py", line 35, in query_with_timeout
+    viewer_tuple, viewer_thread = async_viewer()
+  File "c:\Users\domin\anaconda3\envs\tf\lib\site-packages\wandb\util.py", line 1188, in wrapper
+    result = q.get(True, timeout)
+  File "c:\Users\domin\anaconda3\envs\tf\lib\queue.py", line 180, in get
+    self.not_empty.wait(remaining)
+  File "c:\Users\domin\anaconda3\envs\tf\lib\threading.py", line 316, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2024-01-16 19:13:30,092 INFO    MainThread:22408 [wandb_init.py:_log_setup():526] Logging user logs to c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\3. Reinforcement Learning\wandb\run-20240116_191330-0awf81yx\logs\debug.log
+2024-01-16 19:13:30,092 INFO    MainThread:22408 [wandb_init.py:_log_setup():527] Logging internal logs to c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\3. Reinforcement Learning\wandb\run-20240116_191330-0awf81yx\logs\debug-internal.log
+2024-01-16 19:13:30,092 INFO    MainThread:22408 [wandb_init.py:_jupyter_setup():472] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x00000195AF3A79D0>
+2024-01-16 19:13:30,092 INFO    MainThread:22408 [wandb_init.py:init():566] calling init triggers
+2024-01-16 19:13:30,093 INFO    MainThread:22408 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {}
+2024-01-16 19:13:30,093 INFO    MainThread:22408 [wandb_init.py:init():616] starting backend
+2024-01-16 19:13:30,093 INFO    MainThread:22408 [wandb_init.py:init():620] setting up manager
+2024-01-16 19:13:30,093 INFO    MainThread:22408 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-01-16 19:13:30,093 INFO    MainThread:22408 [wandb_init.py:init():628] backend started and connected
+2024-01-16 19:13:30,105 INFO    MainThread:22408 [wandb_run.py:_label_probe_notebook():1294] probe notebook
+2024-01-16 19:13:30,106 INFO    MainThread:22408 [wandb_run.py:_label_probe_notebook():1304] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-01-16 19:13:30,106 INFO    MainThread:22408 [wandb_init.py:init():720] updated telemetry
+2024-01-16 19:13:30,141 INFO    MainThread:22408 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-01-16 19:13:30,590 INFO    MainThread:22408 [wandb_run.py:_on_init():2254] communicating current version
+2024-01-16 19:13:31,040 INFO    MainThread:22408 [wandb_run.py:_on_init():2263] got version response 
+2024-01-16 19:13:31,040 INFO    MainThread:22408 [wandb_init.py:init():804] starting run threads in backend
+2024-01-16 19:13:31,759 INFO    MainThread:22408 [wandb_run.py:_console_start():2233] atexit reg
+2024-01-16 19:13:31,759 INFO    MainThread:22408 [wandb_run.py:_redirect():2088] redirect: wrap_raw
+2024-01-16 19:13:31,759 INFO    MainThread:22408 [wandb_run.py:_redirect():2153] Wrapping output streams.
+2024-01-16 19:13:31,759 INFO    MainThread:22408 [wandb_run.py:_redirect():2178] Redirects installed.
+2024-01-16 19:13:31,759 INFO    MainThread:22408 [wandb_init.py:init():847] run started, returning control to user process
+2024-01-16 19:13:31,781 INFO    MainThread:22408 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-01-16 19:13:31,781 INFO    MainThread:22408 [wandb_init.py:_pause_backend():437] pausing backend
+2024-01-16 19:14:01,952 INFO    MainThread:22408 [wandb_init.py:_resume_backend():442] resuming backend
+2024-01-16 19:14:01,967 INFO    MainThread:22408 [wandb_setup.py:_flush():76] Current SDK version is 0.16.2
+2024-01-16 19:14:01,967 INFO    MainThread:22408 [wandb_setup.py:_flush():76] Configure stats pid to 22408
+2024-01-16 19:14:01,967 INFO    MainThread:22408 [wandb_setup.py:_flush():76] Loading settings from C:\Users\domin\.config\wandb\settings
+2024-01-16 19:14:01,967 INFO    MainThread:22408 [wandb_setup.py:_flush():76] Loading settings from c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\3. Reinforcement Learning\wandb\settings
+2024-01-16 19:14:01,967 INFO    MainThread:22408 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-01-16 19:14:01,967 INFO    MainThread:22408 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-01-16 19:14:01,967 INFO    MainThread:22408 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-01-16 19:14:01,967 WARNING MainThread:22408 [wandb_setup.py:_flush():76] interrupted
+Traceback (most recent call last):
+  File "c:\Users\domin\anaconda3\envs\tf\lib\site-packages\IPython\core\interactiveshell.py", line 3460, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "C:\Users\domin\AppData\Local\Temp\ipykernel_22408\3739779065.py", line 5, in <module>
+    run = wandb.init(project="sb3_pendulum_demo",sync_tensorboard=True)
+  File "c:\Users\domin\anaconda3\envs\tf\lib\site-packages\wandb\sdk\wandb_init.py", line 1199, in init
+    raise e
+  File "c:\Users\domin\anaconda3\envs\tf\lib\site-packages\wandb\sdk\wandb_init.py", line 1172, in init
+    wi.setup(kwargs)
+  File "c:\Users\domin\anaconda3\envs\tf\lib\site-packages\wandb\sdk\wandb_init.py", line 306, in setup
+    wandb_login._login(
+  File "c:\Users\domin\anaconda3\envs\tf\lib\site-packages\wandb\sdk\wandb_login.py", line 307, in _login
+    logged_in = wlogin.login()
+  File "c:\Users\domin\anaconda3\envs\tf\lib\site-packages\wandb\sdk\wandb_login.py", line 159, in login
+    self.login_display()
+  File "c:\Users\domin\anaconda3\envs\tf\lib\site-packages\wandb\sdk\wandb_login.py", line 164, in login_display
+    username = self._wl._get_username()
+  File "c:\Users\domin\anaconda3\envs\tf\lib\site-packages\wandb\sdk\wandb_setup.py", line 194, in _get_username
+    self._load_viewer()
+  File "c:\Users\domin\anaconda3\envs\tf\lib\site-packages\wandb\sdk\wandb_setup.py", line 216, in _load_viewer
+    s.query_with_timeout()
+  File "c:\Users\domin\anaconda3\envs\tf\lib\site-packages\wandb\sdk\lib\server.py", line 35, in query_with_timeout
+    viewer_tuple, viewer_thread = async_viewer()
+  File "c:\Users\domin\anaconda3\envs\tf\lib\site-packages\wandb\util.py", line 1188, in wrapper
+    result = q.get(True, timeout)
+  File "c:\Users\domin\anaconda3\envs\tf\lib\queue.py", line 180, in get
+    self.not_empty.wait(remaining)
+  File "c:\Users\domin\anaconda3\envs\tf\lib\threading.py", line 316, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2024-01-16 19:14:01,967 INFO    MainThread:22408 [wandb_init.py:_log_setup():526] Logging user logs to c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\3. Reinforcement Learning\wandb\run-20240116_191401-ctr6y1p7\logs\debug.log
+2024-01-16 19:14:01,967 INFO    MainThread:22408 [wandb_init.py:_log_setup():527] Logging internal logs to c:\Users\domin\Desktop\Year 2 Block B\2023-24b-fai2-adsai-DominikSzewczyk224180\3. Reinforcement Learning\wandb\run-20240116_191401-ctr6y1p7\logs\debug-internal.log
+2024-01-16 19:14:01,967 INFO    MainThread:22408 [wandb_init.py:init():566] calling init triggers
+2024-01-16 19:14:01,967 INFO    MainThread:22408 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {}
+2024-01-16 19:14:01,967 INFO    MainThread:22408 [wandb_init.py:init():591] re-initializing run, found existing run on stack: 0awf81yx
+2024-01-16 19:14:01,973 INFO    MainThread:22408 [wandb_run.py:_finish():1962] finishing run buas_blockb/sb3_pendulum_demo/0awf81yx
+2024-01-16 19:14:01,973 INFO    MainThread:22408 [jupyter.py:save_history():445] not saving jupyter history
+2024-01-16 19:14:01,973 INFO    MainThread:22408 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-01-16 19:14:01,973 INFO    MainThread:22408 [wandb_init.py:_jupyter_teardown():454] cleaning up jupyter logic
+2024-01-16 19:14:01,973 INFO    MainThread:22408 [wandb_run.py:_atexit_cleanup():2202] got exitcode: 0
+2024-01-16 19:14:01,974 INFO    MainThread:22408 [wandb_run.py:_restore():2185] restore
+2024-01-16 19:14:01,974 INFO    MainThread:22408 [wandb_run.py:_restore():2191] restore done
+2024-01-16 19:14:08,965 INFO    MainThread:22408 [wandb_run.py:_footer_history_summary_info():3857] rendering history
+2024-01-16 19:14:08,965 INFO    MainThread:22408 [wandb_run.py:_footer_history_summary_info():3889] rendering summary
+2024-01-16 19:14:08,966 INFO    MainThread:22408 [wandb_run.py:_footer_sync_info():3816] logging synced files
