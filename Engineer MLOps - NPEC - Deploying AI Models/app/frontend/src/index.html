@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATHENA | WebApp</title>
+    <link rel="icon" type="image/png" href="assets/ATHENA_icon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/data.css" rel="stylesheet">
+        
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="sidebar col-md-2 min-vh-100" id="sidebar"></div>
+            <div class="col page" style="text-align:justify";>
+                <div class="card">
+                <h1>Introducing ATHENA</h1>
+                <h2>Overview</h2>
+                <p style="font-size: x-large;">Athena is a cutting-edge Python package and cloud application designed for plant science researchers
+                    at the Netherlands Plant Eco-phenotyping Centre (NPEC). This powerful tool enables precise organ segmentation
+                    and landmark detection on high-resolution plant images, facilitating a deeper understanding of plant phenotypes.
+                    This tool allows research centres to train models on their own data and provides a high level of customisability,
+                    ensuring a precise analysis on various use cases within plant-phenotyping.</p>
+                <h2>Why 'ATHENA'?</h2>
+                <p style="font-size: x-large;">This application is a deployment and advanced tool built on NPEC's phenotyping installations designed for high-throughput phenotyping.
+                    NPEC's systems, called 'Helios' & 'Hades', capture high-quality data from plants above and below ground.
+                    Named after the Greek goddess of wisdom, Athena embodies (artificial) intelligence 
+                    and strategic warfare, metaphors that align well with the application's goal to harness sophisticated analytical capabilities in plant science.
+                    Automating the labelling and analysis process, this application allows easy tracking of strategically modified environmental circumstances.</p>
+                <p style="font-weight: bolder; text-align: center; font-size: small;">Created by Dániel Elek, Benjamin Graziadei, Kian van Holst, Matey Nedyalkov, Dominik Szewczyk</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function loadHTML(url, elementId) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                    highlightActiveLink();
+                })
+                .catch(error => console.error('Error loading the HTML:', error));
+        }
+
+        function highlightActiveLink() {
+            const currentPath = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('#sidebar .nav-link');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        loadHTML('menu.html', 'sidebar');
+    </script>
+</body>
+</html>

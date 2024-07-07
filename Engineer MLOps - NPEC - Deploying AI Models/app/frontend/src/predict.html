@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATHENA | WebApp</title>
+    <link rel="icon" type="image/png" href="assets/ATHENA_icon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/data.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="sidebar col-md-2 min-vh-100" id="sidebar"></div>
+            <div class="col-auto page">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-6 col-sm-12" style="text-align:justify;">
+                        <div class="card">
+                            <h1>PREDICT ON DATASET</h1>
+                            <h2>Select dataset</h2>
+                            
+                            <ul class="clickable-list" id="processed-data"></ul>
+
+                            <h2>Select model</h2>
+                            <ul class="clickable-list" id="model-list-1"></ul>
+                            <br>
+                            <button  id="predict-data" type="submit">Predict</button>
+
+                            <br>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12" style="text-align:justify;">
+                        <div class="card">
+                            <h1>Predict on  image</h1>
+                            <h2>Upload image</h2>
+                            <input type="file" class="form-control-file" id="upload-image" accept="image/*" multiple>
+                            <h2>Select model</h2>
+                            <ul class="clickable-list" id="model-list-2"></ul>
+                            <br>
+
+                            <button  id="predict-img" type="submit">Predict</button>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<body>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="card">
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function loadHTML(url, elementId) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                    highlightActiveLink();
+                })
+                .catch(error => console.error('Error loading the HTML:', error));
+        }
+
+        function highlightActiveLink() {
+            const currentPath = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('#sidebar .nav-link');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        loadHTML('menu.html', 'sidebar');
+    </script>
+    <script src="js/predict.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

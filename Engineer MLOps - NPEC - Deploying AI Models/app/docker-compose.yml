@@ -1,0 +1,30 @@
+services:
+  backend:
+    build:
+      context: ./backend  # Path to your backend directory containing the Dockerfile
+      dockerfile: Dockerfile  # Name of the Dockerfile (adjust if different)
+    image: athena-backend-img
+    container_name: athena-backend
+    networks:
+      - athena
+    ports:
+      - "8000:8000"  # Adjust according to your backend service port
+    environment:
+      - FRONTEND_URL=http://frontend:80  # Example environment variable, adjust as needed
+
+  frontend:
+    build:
+      context: ./frontend  # Path to your frontend directory containing the Dockerfile
+      dockerfile: Dockerfile  # Name of the Dockerfile (adjust if different)
+    image: athena-frontend-img  # Replace with your desired image name
+    container_name: athena-frontend
+    networks:
+      - athena
+    ports:
+      - "80:80"  # Adjust according to your frontend service port
+    environment:
+      - REACT_APP_API_URL=http://backend:8000  # Example environment variable, adjust as needed
+
+networks:
+  athena:
+    driver: bridge

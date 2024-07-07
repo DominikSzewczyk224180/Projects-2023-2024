@@ -1,0 +1,18 @@
+2024-06-28 13:36:00 - INFO - Destination directories created.
+2024-06-28 13:36:00 - INFO - Destination directory is empty, continuing with the process.
+2024-06-28 13:36:00 - INFO - Found 126 images with extension *.png
+2024-06-28 13:36:00 - INFO - Total images found: 126
+2024-06-28 13:36:00 - INFO - The following masks have been found for 000_43-18-ROOT1-2023-08-08_pvdCherry_OD001_Col0_01-Fish Eye Corrected: ['_occluded_root_mask.tif', '_root_mask.tif', '_seed_mask.tif', '_shoot_mask.tif'].
+2024-06-28 13:36:00 - INFO - No missing masks detected.
+2024-06-28 13:36:00 - INFO - Starting data split with train_size=0.8 and val_size=0.1
+2024-06-28 13:36:00 - INFO - Data split completed. Training set: 100, Testing set: 13, Validation set: 13
+2024-06-28 13:36:00 - INFO - Created directories: data/processed\NPEC\train_images and data/processed\NPEC\train_masks
+2024-06-28 13:36:00 - INFO - Created directories: data/processed\NPEC\test_images and data/processed\NPEC\test_masks
+2024-06-28 13:36:00 - INFO - Created directories: data/processed\NPEC\val_images and data/processed\NPEC\val_masks
+2024-06-28 13:36:00 - INFO - Processing train images.
+2024-06-28 13:38:55 - INFO - Completed processing train images.
+2024-06-28 13:38:55 - INFO - Processing test images.
+2024-06-28 13:39:14 - INFO - Completed processing test images.
+2024-06-28 13:39:14 - INFO - Processing val images.
+2024-06-28 13:39:35 - INFO - Completed processing val images.
+2024-06-28 13:39:35 - INFO - Processing finished.

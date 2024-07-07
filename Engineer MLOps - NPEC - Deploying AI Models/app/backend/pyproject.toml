@@ -1,0 +1,124 @@
+
+# ▀█▀ ░█▄─░█ ░█▀▀▀█ ▀▀█▀▀ ─█▀▀█ ░█─── ░█─── ▀█▀ ░█▄─░█ ░█▀▀█ 　 ░█▀▀█ ░█▀▀▀█ ░█▀▀▀ ▀▀█▀▀ ░█▀▀█ ░█──░█
+# ░█─ ░█░█░█ ─▀▀▀▄▄ ─░█── ░█▄▄█ ░█─── ░█─── ░█─ ░█░█░█ ░█─▄▄ 　 ░█▄▄█ ░█──░█ ░█▀▀▀ ─░█── ░█▄▄▀ ░█▄▄▄█
+# ▄█▄ ░█──▀█ ░█▄▄▄█ ─░█── ░█─░█ ░█▄▄█ ░█▄▄█ ▄█▄ ░█──▀█ ░█▄▄█ 　 ░█─── ░█▄▄▄█ ░█▄▄▄ ─░█── ░█─░█ ──░█──
+# -------------------------------------------
+# MacOS and Linux:
+#   Install Poetry by running the following command in the terminal:
+#   curl -sSL https://install.python-poetry.org | python3 -
+#
+# Windows:
+#   Install Poetry by running the following command in PowerShell (as Administrator):
+#   (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
+#
+# Ensure that the Poetry bin directory is in your PATH:
+# MacOS/Linux:
+#   Add this line to your shell configuration file (.bashrc, .bash_profile, .zshrc, etc.):
+#   export PATH="$HOME/.local/bin:$PATH"
+#
+# Windows:
+#   Add the Poetry bin directory to your PATH using System Properties:
+#   - Open 'System Properties' > 'Advanced' > 'Environment Variables'
+#   - Under 'System variables', find 'Path' and select 'Edit'
+#   - Add a new line with: %USERPROFILE%\.poetry\bin
+#   - Click 'OK' to close all dialogs
+#
+# Verify installation by running: poetry --version
+# If Poetry is installed correctly, you should see the installed version.
+
+
+# ░█▀▀█ ░█▀▀▀█ ░█▀▀▀ ▀▀█▀▀ ░█▀▀█ ░█──░█ 　 ░█▀▀█ ░█▀▀▀█ ░█▀▄▀█ ░█▀▄▀█ ─█▀▀█ ░█▄─░█ ░█▀▀▄ ░█▀▀▀█
+# ░█▄▄█ ░█──░█ ░█▀▀▀ ─░█── ░█▄▄▀ ░█▄▄▄█ 　 ░█─── ░█──░█ ░█░█░█ ░█░█░█ ░█▄▄█ ░█░█░█ ░█─░█ ─▀▀▀▄▄
+# ░█─── ░█▄▄▄█ ░█▄▄▄ ─░█── ░█─░█ ──░█── 　 ░█▄▄█ ░█▄▄▄█ ░█──░█ ░█──░█ ░█─░█ ░█──▀█ ░█▄▄▀ ░█▄▄▄█
+# ------------------------------------
+# Install all project dependencies as specified:
+# poetry install --no-root
+#
+# Add a new package dependency:
+# poetry add <package-name>
+#
+# Update all project dependencies:
+# poetry update
+#
+# Run a script or command within the virtual environment:
+# poetry run <command>
+#
+# Build the project for packaging:
+# poetry build
+
+# ▀█▀ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀ ░█▀▀█ ░█▀▀█ ─█▀▀█ ▀▀█▀▀ ▀█▀ ░█▄─░█ ░█▀▀█ 　 ░█──░█ ▀█▀ ▀▀█▀▀ ░█─░█ 　 ▀█▀ ░█▀▀█ ░█──░█ ░█▄─░█ ░█▀▀█
+# ░█─ ░█░█░█ ─░█── ░█▀▀▀ ░█─▄▄ ░█▄▄▀ ░█▄▄█ ─░█── ░█─ ░█░█░█ ░█─▄▄ 　 ░█░█░█ ░█─ ─░█── ░█▀▀█ 　 ░█─ ░█▄▄█ ░█▄▄▄█ ░█░█░█ ░█▀▀▄
+# ▄█▄ ░█──▀█ ─░█── ░█▄▄▄ ░█▄▄█ ░█─░█ ░█─░█ ─░█── ▄█▄ ░█──▀█ ░█▄▄█ 　 ░█▄▀▄█ ▄█▄ ─░█── ░█─░█ 　 ▄█▄ ░█─── ──░█── ░█──▀█ ░█▄▄█
+# -----------------------------------------------------
+# 1. Activate the Poetry environment:
+#    In your terminal (MacOS/Linux) or Command Prompt/PowerShell (Windows), navigate to your project directory (or open terminal in VSCode) and type:
+#    poetry shell
+#
+# 2. Install the Jupyter kernel for your project:
+#    Within the activated Poetry shell, install an IPython kernel with a specific name for your project:
+#    python -m ipykernel install --user --name=cv1-py3 --display-name "Poetry: CV1"
+#
+# 3. Confirm kernel installation:
+#    The installation will provide a path to where the kernel is installed, similar to:
+#    MacOS Example:
+#    "Installed kernelspec cv1-py3 in /Users/yourusername/Library/Jupyter/kernels/cv1-py3"
+#    Windows Example:
+#    "Installed kernelspec cv1-py3 in C:\\Users\\yourusername\\AppData\\Roaming\\jupyter\\kernels\\cv1-py3"
+#
+# 4. View the kernel configuration:
+#    To see the configuration of the newly installed kernel, use the 'cat' command on MacOS or 'type' command on Windows:
+#    MacOS:
+#    cat /Users/yourusername/Library/Jupyter/kernels/cv1-py3/kernel.json
+#    Windows:
+#    type C:\\Users\\daraz\\AppData\\Roaming\\jupyter\\kernels\\cv1-py3\\kernel.json
+#    This file contains the path to the Python executable used by Jupyter, which should point to the virtual environment created by Poetry.
+#
+# 5. Configure VSCode to use the Poetry environment:
+#    - Open Visual Studio Code.
+#    - Press Ctrl + Shift + P (Cmd + Shift + P on MacOS) to open the command palette.
+#    - Type and select "Python: Select Interpreter".
+#    - Enter the path to the Python executable from your kernel.json file (you can copy this path directly from the kernel.json file).
+#    Example path from kernel.json:
+#    MacOS:
+#    "/Users/yourusername/Library/Caches/pypoetry/virtualenvs/cv1-IVtFTzyq-py3.12/bin/python"
+#    Windows:
+#    "C:\\Users\\yourusername\\AppData\\Local\\pypoetry\\Cache\\virtualenvs\\cv1-IVtFTzyq-py3.1
+
+# ░█▀▀█ ░█▀▀▀█ ░█▀▀▀ ▀▀█▀▀ ░█▀▀█ ░█──░█ 　 ░█▀▀█ ░█▀▀▀█ ░█▄─░█ ░█▀▀▀ ▀█▀ ░█▀▀█ ░█─░█ ░█▀▀█ ─█▀▀█ ▀▀█▀▀ ▀█▀ ░█▀▀▀█ ░█▄─░█
+# ░█▄▄█ ░█──░█ ░█▀▀▀ ─░█── ░█▄▄▀ ░█▄▄▄█ 　 ░█─── ░█──░█ ░█░█░█ ░█▀▀▀ ░█─ ░█─▄▄ ░█─░█ ░█▄▄▀ ░█▄▄█ ─░█── ░█─ ░█──░█ ░█░█░█
+# ░█─── ░█▄▄▄█ ░█▄▄▄ ─░█── ░█─░█ ──░█── 　 ░█▄▄█ ░█▄▄▄█ ░█──▀█ ░█─── ▄█▄ ░█▄▄█ ─▀▄▄▀ ░█─░█ ░█─░█ ─░█── ▄█▄ ░█▄▄▄█ ░█──▀█
+# -------------------------------------------
+[tool.poetry]
+name = "CV1"
+version = "0.1.0"
+description = "We got this"
+authors = ["Dániel Elek, Benjamin Graziadei, Kian van Holst, Matey Nedyalkov, Dominik Szewczyk"]
+
+[tool.poetry.dependencies]
+python = "3.10.11"
+jupyter = "*"
+numpy = "*"
+ipykernel = "^6.29.4"
+matplotlib = "^3.8.4"
+patchify = "^0.2.3"
+tqdm = "^4.66.4"
+scikit-learn = "^1.4.2"
+pre-commit = "^3.7.1"
+tensorflow = "2.10.1"
+tensorflow-io-gcs-filesystem = "0.27.0"
+skan = "^0.11.1"
+logger = "^1.4"
+sphinx = "^7.3.7"
+sphinx-rtd-theme = "^2.0.0"
+poetry2conda = "^0.3.0"
+fastapi = "^0.111.0"
+uvicorn = "^0.30.1"
+sphinx-copybutton = "^0.5.2"
+opencv-contrib-python = "^4.10.0.82"
+python-dotenv = "^1.0.1"
+inquirer = "^3.3.0"
+azureml = "^0.2.7"
+azureml-core = "^1.56.0"
+
+[tool.poetry2conda]
+name = "athenamlenvironment5"

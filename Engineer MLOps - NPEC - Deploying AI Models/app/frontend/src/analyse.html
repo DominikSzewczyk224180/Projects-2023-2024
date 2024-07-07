@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATHENA | WebApp</title>
+    <link rel="icon" type="image/png" href="assets/ATHENA_icon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/data.css" rel="stylesheet">
+
+    <link href="css/analyse.css" rel="stylesheet">
+    <script src="js/script2.js"></script>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="sidebar col-md-2 min-vh-100" id="sidebar"></div>
+
+            <div class="col-md-10 page">
+                <div class="row">
+                    <div class="col-lg-4 col-md-3 col-sm-12 ">
+                        <div class="row">
+                            <div class="card">
+                                <h1>Predictions</h1>
+                                <ul class="clickable-list" id="prediction-list"></ul>
+                                <br>
+                                <div class="row mb-2">
+                                    <div class="col">
+                                        <select class="form-control" aria-label="Filter 1">
+                                            <option selected>Filter 1</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <select class="form-control" aria-label="Filter 2">
+                                            <option selected>Filter 2</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-auto">
+                                        <button class="btn btn-danger">X</button>
+                                    </div>
+                                </div>
+                                <button class="btn btn-warning" id="delete-predictions">Delete Predictions</button>
+                                <br>
+                                <button class="btn btn-warning" id="download-predictions">Download predictions dataset</button>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="card">
+                                <h1>Analysis (not available in early access)</h1>
+                                <div id="csvContainer">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Plant ID</th>
+                                                <th>Primary Root Length</th>
+                                                <th>Shoot Surface Area Approximate</th>
+                                                <th>Secondary Root Lengths Combined</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>p1</td>
+                                                <td>10 mm</td>
+                                                <td>200 mm²</td>
+                                                <td>15 mm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>p2</td>
+                                                <td>12 mm</td>
+                                                <td>220 mm²</td>
+                                                <td>18 mm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>p3</td>
+                                                <td>8 mm</td>
+                                                <td>180 mm²</td>
+                                                <td>14 mm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>p4</td>
+                                                <td>15 mm</td>
+                                                <td>250 mm²</td>
+                                                <td>20 mm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>p5</td>
+                                                <td>9 mm</td>
+                                                <td>190 mm²</td>
+                                                <td>16 mm</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="button-container">
+                                    <button disabled class="btn btn-secondary">Download image data</button>
+                                    <button disabled class="btn btn-secondary">Download complete predictions data</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                
+                    <div class="col-lg-8 col-md-8 col-sm-12" style="text-align: justify;">
+                        <div class="card">
+                            <h1>Review predictions</h1>
+                            <h2 id="image-counter">Image (1/3)</h2>
+                            <div class="image-container">
+                                <img id="org-img" src="../../backend/ATHENA/data/predictions/user_uploads/ORG_test_image_1.png" alt="Mock Data">
+                                <img id="prediction" src="../../backend/ATHENA/data/predictions/user_uploads/COMB_test_image_1.png" alt="Mock Data">
+                                <img id="heatmap1" src="../../backend/ATHENA/data/predictions/user_uploads/PROB_mask1_test_image_1.png" alt="Mock Data">
+                                <img id="heatmap2" src="../../backend/ATHENA/data/predictions/user_uploads/PROB_mask2_test_image_1.png" alt="Mock Data">
+                                <img id="heatmap3" src="../../backend/ATHENA/data/predictions/user_uploads/PROB_mask3_test_image_1.png" alt="Mock Data">
+                            </div>
+                            <div class="row">
+                                <!-- Column 1 -->
+                                <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                                    <div class="button-container my-2">
+                                        <button id="prev-img-btn"><</button>
+                                        <button id="org-btn"  ><i class="fas fa-camera"></i></button>
+                                        <button id="next-img-btn" >></button>
+                                    </div>
+                                    <button id="download-img-pred-btn" class=" mt-2">Download image + predictions</button>
+                                </div>
+                                
+                                <!-- Column 2 -->
+                                <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                                    <div class="row w-100" id="feedback-form">
+                                        <div class="col d-flex justify-content-center">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="mark-as-false">
+                                                <label class="form-check-label" for="mark-as-false">
+                                                    False
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col d-flex justify-content-center">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="mark-as-correct">
+                                                <label class="form-check-label" for="mark-as-correct">
+                                                    Correct
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <button id="submit-feedback" stle="margin-top: 5px;"class="mt-2">Submit feedback</button>
+                                    </div>
+                                </div>
+                                <div class="legend">
+                                    <p>Hover over the original image (camera icon) to view the heatmap!</p>
+                                    <div class="legend-label">Certainty:</div>
+                                    <div class="gradient"></div>
+                                    <div class="legend-value">
+                                        <span style="color: red;">0%</span>
+                                        <span style="color: rgb(158, 158, 33);">50%</span>
+                                        <span style="color: green;">100%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                              
+                            
+                        </div>
+                    </div>
+                
+                </div>
+                
+                
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div id="loading-overlay" style="display: none;">
+        <div id="loading-popup">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+</body>
+
+<script>
+
+document.getElementById('org-btn').addEventListener('click', function() {
+        var orgImg = document.getElementById('org-img');
+        var predictionImg = document.getElementById('prediction');
+        var orgBtn = document.getElementById('org-btn');
+
+        if (orgImg.style.display === 'none' || orgImg.style.display === '') {
+            orgImg.style.display = 'block';
+            predictionImg.style.display = 'none';
+            orgBtn.classList.add('disabled-button');
+        } else {
+            orgImg.style.display = 'none';
+            predictionImg.style.display = 'block';
+            orgBtn.classList.remove('disabled-button');
+        }
+    });
+
+
+    function loadHTML(url, elementId) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                    highlightActiveLink();
+                })
+                .catch(error => console.error('Error loading the HTML:', error));
+        }
+
+        function highlightActiveLink() {
+            const currentPath = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('#sidebar .nav-link');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        loadHTML('menu.html', 'sidebar');
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+</html>

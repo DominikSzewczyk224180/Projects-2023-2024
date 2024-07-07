@@ -1,0 +1,36 @@
+ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 5px; /* Added padding */
+  border-radius: 15px;
+  border: 1px solid black; /* Corrected border property */
+  margin: 0; /* Remove margin */
+}
+
+li {
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 2px 0; /* Added margin to prevent overlap */
+  border-radius: 5px;
+}
+
+.clickable-list li:hover {
+  background-color: #f8f9fa; /* Bootstrap's light gray color for hover effect */
+}
+
+.clickable-list li.active {
+  background-color: #d1d1d1; /* Bootstrap's primary color */
+  color: white;
+}
+
+
+#class-list {
+    columns: 2;
+    -webkit-columns: 2; /* Safari and Chrome */
+    -moz-columns: 2; /* Firefox */
+}
+#class-list li {
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid; /* Safari and Chrome */
+    -moz-column-break-inside: avoid; /* Firefox */
+}
+
